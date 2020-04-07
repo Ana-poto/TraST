@@ -20,6 +20,12 @@ body{
     font-family: "Bell MT";
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+body{
+    -ms-overflow-style: none;
+}
 
 .home {
     position: absolute;
@@ -35,29 +41,41 @@ body{
     font-size: 18px;
     text-align: center;
     line-height: 40px;
-    position: relative;
     background-color: #424242;
-
+    display: flex;
+    justify-content:space-between;
 }
+.Center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: center;
+}
+
 
 #nav-background ul{
     top:0;
     padding: 10px 0;
     color: White;
-}
 
+
+}
 #nav-background li{
     display: inline-block;
 }
-.Main , .Logo {
+
+.Main , .Logo{
     color: White;
 }
+
 
 .Main a , .Logo a  {
     padding: 13px;
     text-decoration: none;
 }
-.Main:hover {
+.Main:hover{
     background-color: #111;
 }
 
