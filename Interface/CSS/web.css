@@ -40,13 +40,14 @@ body{
     font-size: 170%;
 }
 .question{
-
+    color: #111111;
     font-size: 130%;
     margin: 3%;
 }
 .answers {
     display: flex;
     flex-direction: column;
+    color: #111111;
 
 }
 .answers label{
