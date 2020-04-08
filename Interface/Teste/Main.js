@@ -142,12 +142,19 @@ function generateQuiz(questions, quizContainer, resultsContainer, submit){
                     + '</label>'
                 );
             }
-
+            if(questions[i].image!=''){
             output.push(
                 '<div class="question">' + questions[i].question + '</div>'
-                + '<img class="semnT" src="'+questions[i].image  +'">'
+                +  '<img class="semnT" src="'+questions[i].image  +'" alt="Question_image">'
                 + '<div class="answers">' + answers.join('') + '</div>'
-            );
+            );}
+            else
+            {
+                output.push(
+                    '<div class="question">' + questions[i].question + '</div>'
+                    + '<div class="answers">' + answers.join('') + '</div>'
+                );
+            }
         }
 
 
