@@ -173,6 +173,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submit){
                 numCorrect++;
         }
         resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
+
     }
     showQuestions(questions, quizContainer);
     submit.onclick = function(){
