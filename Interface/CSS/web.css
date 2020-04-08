@@ -20,6 +20,69 @@ body{
     font-family: "Bell MT";
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+body{
+    -ms-overflow-style: none;
+}
+
+#quiz{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.semnT{
+    margin-bottom: 3%;
+    width: 15%;
+}
+.quiz{
+    font-size: 170%;
+}
+.question{
+    font-size: 130%;
+    margin: 3%;
+}
+.answers {
+    display: flex;
+    flex-direction: column;
+
+}
+.answers label{
+    margin: 3%;
+}
+
+.dropdown-content{
+    display: none;
+    justify-content: center;
+    position: relative;
+    background-color: #424242;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    text-decoration: none;
+    display: block;
+
+}
+button{
+    margin-top:5% ;
+    margin-bottom: 3%;
+    color: #93a5cf;
+    font-size: 70%;
+}
+
+
+#results{
+    margin-bottom: 10%;
+    font-size: 150%;
+}
+
+.Main:hover .dropdown-content{display: block;}
+
 
 .home {
     position: absolute;
@@ -35,29 +98,41 @@ body{
     font-size: 18px;
     text-align: center;
     line-height: 40px;
-    position: relative;
     background-color: #424242;
-
+    display: flex;
+    justify-content:space-between;
 }
+.Center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: center;
+}
+
 
 #nav-background ul{
     top:0;
     padding: 10px 0;
     color: White;
-}
 
+
+}
 #nav-background li{
     display: inline-block;
 }
-.Main , .Logo {
+
+.Main , .Logo{
     color: White;
 }
+
 
 .Main a , .Logo a  {
     padding: 13px;
     text-decoration: none;
 }
-.Main:hover {
+.Main:hover,.Main:hover .dropdown-content a:hover{
     background-color: #111;
 }
 
