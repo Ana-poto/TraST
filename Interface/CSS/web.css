@@ -38,6 +38,7 @@ body{
 }
 .quiz{
     font-size: 170%;
+    font-weight: bold;
 }
 .question{
     color: #111111;

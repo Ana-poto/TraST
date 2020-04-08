@@ -26,9 +26,9 @@ var questions = [
         question: "3.Ce semnifică indicatorul din imagine?",
         image:'../pics/Test/3615.jpg',
         answers: {
-            a: '„Accesul interzis copiilor neînsoțiți“',
-            b: '„Trecere obligatorie pentru copii“',
-            c: '„Copii“'
+            a: 'Accesul interzis copiilor neînsoțiți',
+            b: 'Trecere obligatorie pentru copii',
+            c: 'Copii'
 
         },
         correctAnswer: 'c'
