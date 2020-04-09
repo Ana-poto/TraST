@@ -23,6 +23,7 @@
 
 <!--NAVBAR-->
 
+
 <div id="nav-background">
 
     <ul class="Left" >
@@ -34,7 +35,7 @@
     </ul>
     <ul class="Center" >
         <li class="Main">
-            <a class="NavMain" data-ui-name="learn" href="learn.html">
+            <a class="NavMain_activ" data-ui-name="learn" href="learn.html">
                 Imbogateste-ti cunostintele
             </a>
         </li>
@@ -53,7 +54,7 @@
             </a>
         </li>
         <li class="Main">
-            <a class="NavMain_activ" data-ui-name="Sign up" href="sign_up.html">
+            <a class="NavMain" data-ui-name="Sign up" href="sign_up.html">
                 Sign up
             </a>
         </li>
@@ -63,20 +64,25 @@
 
 </div>
 
-
 <!--SIGN UP FORM-->
 
-<form class="sign_box" action="sign.java" method="post">
+<form class="sign_box" action="" method="post">
 <div class="form_logo">
     <img src="pics/logo.png" alt="LOGO" class="logo">
 </div>
 
 <h1>Sign Up</h1>
 
-<input type="text" placeholder="Username" name="user" required>
-<input type="email" placeholder="E-mail" name="e-mail" required>
-<input type="password" placeholder="Password" name="pass" required>
-<input type="submit" name="Sign up" value="Sign up">
+    <label>
+        <input type="text" placeholder="Username" name="user" required>
+    </label>
+    <label>
+        <input type="email" placeholder="E-mail" name="e-mail" required>
+    </label>
+    <label>
+        <input type="password" placeholder="Password" name="pass" required>
+    </label>
+    <input type="submit" name="Sign up" value="Sign up">
 
     <a class="link" href="log_in.html">LOGEAZA-TE</a>
 </form>
