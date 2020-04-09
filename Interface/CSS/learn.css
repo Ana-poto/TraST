@@ -1,17 +1,12 @@
 
-.background_body{
-    background-image : url(poze_categorii_learn/11.jpg);
-}
 
 
 .center {
     display: block;
     float:right;
-    margin-right: 1.3cm;
-    margin-top: 0.2cm;
-    margin-left: auto;
-    margin-bottom: auto;
+
 }
+
 
 .img {
     border-radius: 8px;
