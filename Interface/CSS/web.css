@@ -59,6 +59,7 @@ body{
     display: none;
     justify-content: center;
     position: relative;
+
     background-color: #424242;
     width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -66,6 +67,7 @@ body{
 }
 
 .dropdown-content a{
+    color: #FFF8DC;
     text-decoration: none;
     display: block;
 
@@ -146,7 +148,7 @@ button{
 .NavMain{
     color: #FFF8DC;
 }
-.NavMain_activ{
+.NavMain_activ, #_activ{
     color: darkgoldenrod;
 }
 #Moto{
