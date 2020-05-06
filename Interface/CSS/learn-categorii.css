@@ -1,13 +1,13 @@
 
 .center {
-
     margin-top: 20px;
     display: block;
     margin-left: 3cm;
     margin-right: 1cm;
     float: left;
-    width: 20%;
-    height: 10cm;
+    width: 15%;
+    height: 8cm;
+    box-shadow: 0 8px 6px -6px black;
     margin-bottom: 0.5cm;
     margin-top: 0.5cm;
     border-radius: 8px;
@@ -15,6 +15,7 @@
 
 .img {
     border-radius: 8px;
+
 }
 
 
