@@ -41,4 +41,7 @@
 }
 
 
-
+.center:focus{
+    transform: scale(1.35);
+    border-color: #5bc0eb;
+}
