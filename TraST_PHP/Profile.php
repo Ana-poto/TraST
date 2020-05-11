@@ -92,27 +92,27 @@
     <form class="profile_form" method="post" action="Auth/ProfileD.php">
         <p class="profile_p">
             <h3>First name:</h3>
-            <input class="input" type="text" name="firstname" value="">
+            <input class="input" type="text" placeholder="firstName" value="" >
         </p>
         <p class="profile_p">
             <h3>Last name:</h3>
-            <input class="input" type="text" name="lastname" value="">
+            <input class="input" type="text" placeholder="lastName" value="">
 
         </p>
         <p class="profile_p">
             <h3>Nickname:</h3>
-            <input class="input" type="text" name="nickname" value="">
+            <input class="input" type="text" placeholder="nickname" value="">
 
         </p>
 
         <p class="profile_p">
             <h3>Hobby:</h3>
-            <input class="input" type="text" name="hobby" value="">
+            <input class="input" type="text" placeholder="hobby" value="">
         </p>
 
         <p class="profile_p">
             <h3>Age:</h3>
-            <input class="input" type="text" name="age" value="">
+            <input class="input" type="text" placeholder="age" value="">
         </p>
         <button class="Profile">Submit</button>
     </form>
@@ -120,19 +120,19 @@
 <div class="left-form-top">
     <h4 class="profile_h4">Password Changes</h4>
 
-    <form class="profile_form" method="post" action="Auth/ProfileP.php">
+    <form class="profile_form" method="post" action="Auth/ProfilePassChange.php">
         <p class="profile_p">
             <h3>Password:</h3>
-            <input class="input" type="text" name="lastname" value="">
-        </p>
-        <p class="profile_p">
-            <h3>Mail:</h3>
-            <input class="input" type="text" name="mail" value="">
-
+            <input class="input" type="text" placeholder="pass" value="">
         </p>
         <p class="profile_p">
             <h3>New password:</h3>
-            <input class="input" type="text" name="new_mail" value="">
+            <input class="input" type="text" placeholder="new_pass" value="">
+        </p>
+        <p class="profile_p">
+        <h3>Mail:</h3>
+        <input class="input" type="text" placeholder="e-mail" value="">
+
         </p>
         <button class="Profile">Submit</button>
     </form>
@@ -142,18 +142,18 @@
 <div class="left-form-bottom">
     <h4 class="profile_h4">Email Settings</h4>
 
-    <form class="profile_form" method="post" action="Auth/ProfileE.php">
+    <form class="profile_form" method="post" action="Auth/ProfileEmailChange.php">
         <p class="profile_p">
             <h3> Mail:</h3>
-            <input class="input" type="text" name="mail" value="">
+            <input class="input" type="text" placeholder="e-mail" value="">
         </p>
         <p class="profile_p">
             <h3>Password:</h3>
-            <input class="input" type="text" name="lastname" value="">
+            <input class="input" type="text" placeholder="pass" value="">
         </p>
         <p class="profile_p">
             <h3>New mail:</h3>
-            <input class="input" type="text" name="new_mail" value="">
+            <input class="input" type="text" placeholder="new_mail" value="">
 
         </p>
         <button class="Profile">Submit</button>
