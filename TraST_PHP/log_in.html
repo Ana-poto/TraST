@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang ="RO">
+<head>
+    <title>TraST</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="TraST, invata rutiera de acasa" />
+    <meta name="keywords" content="TraST, semne de circulatie, teste auto" />
+    <meta name="distribution" content="Global" />
+    <meta name="author" content="P.C.N" />
+    <meta name="owner"  content="P.C.N" />
+    <link rel="icon" href="pics/logo.png" type="image/png">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="CSS/web.css" />
+    <link rel="stylesheet" href="CSS/forms.css" />
+
+
+
+
+</head>
+
+
+
+<body >
+
+<!--NAVBAR-->
+
+
+<div id="nav-background">
+
+    <ul class="Left" >
+        <li class="Logo">
+            <a class="NavMain" data-ui-name="home" href="home.php">
+                <img class="home" alt="Logo" src="pics/logo.png">
+            </a>
+        </li>
+    </ul>
+    <ul class="Center" >
+        <li class="Main">
+            <a class="NavMain" data-ui-name="learn" href="learn.html">
+                Imbogateste-ti cunostintele
+            </a>
+            <div id="dropdown" class="dropdown-content">
+                <a href="Learn/learn1.html">Reg de circulatie</a>
+                <a href="Learn/semne_circulatie.html">Semne de circulatie</a>
+            </div>
+        </li>
+
+
+        <li class="Main">
+
+            <a class="NavMain" data-ui-name="teste" href="test.html">
+                Testeaza-ti cunostintele
+            </a>
+        </li>
+    </ul>
+    <ul class="Right" >
+        <li class="Main">
+            <a class="NavMain_activ" data-ui-name="Log in" href="log_in.html">
+                Log in
+            </a>
+        </li>
+        <li class="Main">
+            <a class="NavMain" data-ui-name="Sign up" href="sign_up.html">
+                Sign up
+            </a>
+        </li>
+
+    </ul>
+
+
+</div>
+
+
+
+
+
+<!--LOG IN FORM-->
+
+<form class="log_box" action="Auth/validator.php" method="post">
+<div class="form_logo">
+    <img src="pics/logo.png" alt="LOGO" class="logo">
+  </div>
+
+    <h1>Log In</h1>
+
+    <label>
+        <input type="text" placeholder="Username" name="user" required>
+    </label>
+    <label>
+        <input type="password" placeholder="Password" name="pass" required>
+    </label>
+    <input type="submit" name="Log in">
+
+    <a class="link" href="sign_up.html">CREEAZA-TI UN CONT</a>
+
+</form>
+
+
+</body>
+</html>
