@@ -15,6 +15,7 @@ Baza de date este facuta cu xampp:
  PRIMARY KEY (`email`),
  UNIQUE KEY `id` (`id`)
 )
+Conectarea se face cu username:  root ; pw:1234 (creati-va un root cu acea parola sau schimbati-o din validate/validator)
 
 La sing in si sing_out acele 2 file validate se conn cu baza de date pentru a prelua/ insera date
 Cum mom tot e in php nu putem avea acea optiune de save local.
