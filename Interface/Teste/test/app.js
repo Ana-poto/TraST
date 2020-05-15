@@ -1,3 +1,12 @@
+function wait(ms){
+    var start = new Date().getTime();
+    var end = start;
+    while(end < start + ms) {
+      end = new Date().getTime();
+   }
+ }
+
+
 function Quiz(questions) {
     this.score = 0;
     this.questions = questions;
@@ -11,8 +20,13 @@ Quiz.prototype.getQuestionIndex = function() {
 Quiz.prototype.guess = function(answer) {
     if(this.getQuestionIndex().isCorrectAnswer(answer)) {
         this.score++;
+        document.getElementById("wrong_answer").innerHTML='';
     }
- 
+   
+    
+    document.getElementById(answer.id).style.color="red";
+    wait(5000);
+
     this.questionIndex++;
 }
  
