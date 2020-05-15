@@ -19,14 +19,13 @@ Quiz.prototype.getQuestionIndex = function() {
  
 Quiz.prototype.guess = function(answer) {
     if(this.getQuestionIndex().isCorrectAnswer(answer)) {
+        console.log(answer);
         this.score++;
-        document.getElementById("wrong_answer").innerHTML='';
-    }
-   
-    
-    document.getElementById(answer.id).style.color="red";
-    wait(5000);
 
+    }
+
+    populateV2();   
+    wait(2000);
     this.questionIndex++;
 }
  
@@ -43,7 +42,10 @@ function Question(text, textAnswer, choices, answer) {
 }
  
 Question.prototype.isCorrectAnswer = function(choice) {
+    document.getElementById("btn0").style.backgroundColor='green';
+
     return this.answer === choice;
+
 }
 
  
@@ -74,6 +76,32 @@ function populate() {
  
         showProgress();
     }
+};
+
+function populateV2() {
+       
+        console.log("Test");
+        // show question
+        var element = document.getElementById("question");
+        element.innerHTML = quiz.getQuestionIndex().text;
+
+        
+        // show textAnswer
+        var textAnswer = quiz.getQuestionIndex().textAnswer;
+        for(var i = 0; i < textAnswer.length; i++) {
+            var element = document.getElementById("textAnswer" + i);
+            element.innerHTML = textAnswer[i];
+        }
+ 
+        // show options
+        var choices = quiz.getQuestionIndex().choices;
+        for(var i = 0; i < choices.length; i++) {
+            var element = document.getElementById("choice" + i);
+            element.innerHTML = choices[i];
+        }
+ 
+        showProgress();
+    
 };
  
 function guess(id, guess) {
