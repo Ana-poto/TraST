@@ -1,58 +1,162 @@
 //[imaginile referetiante sunt din A_learn/Indicatoare_de_avertizare]
+function wait(ms){
+    var start = new Date().getTime();
+    var end = start;
+    while(end < start + ms) {
+        end = new Date().getTime();
+    }
+}
+
+
+function Quiz(questions) {
+    this.score = 0;
+    this.questions = questions;
+    this.questionIndex = 0;
+}
+
+Quiz.prototype.getQuestionIndex = function() {
+    return this.questions[this.questionIndex];
+}
+
+Quiz.prototype.guess = function(answer) {
+    if(this.getQuestionIndex().isCorrectAnswer(answer)) {
+        console.log(answer);
+
+        this.score++;
+    }
+
+    for(var i = 0; i < quiz.getQuestionIndex().choices.length; i++) {
+        var number =this.getQuestionIndex().getCorrectAnswer().charCodeAt(0)-65;
+        if (i===number)
+            document.getElementById("btn"+ i).style.backgroundColor="green";
+        else
+            document.getElementById("btn"+ i).style.backgroundColor="red";
+        document.getElementById("btn"+ i).disabled=true;
+    }
+    this.questionIndex++;
+    document.getElementById('nxtbtn').disabled = false;
+}
+
+
+
+Quiz.prototype.isEnded = function() {
+    return this.questionIndex === this.questions.length;
+}
+
+
+function Question(text, textAnswer, choices, answer) {
+    this.text = text;
+    this.textAnswer = textAnswer;
+    this.choices = choices;
+    this.answer = answer;
+}
+
+Question.prototype.isCorrectAnswer = function(choice) {
+
+    return this.answer === choice;
+
+}
+Question.prototype.getCorrectAnswer= function(){
+    return this.answer
+
+}
+
+
+function populate() {
+    if(quiz.isEnded()) {
+        document.getElementById('nxtbtn').style.display = 'none';
+        showScores();
+    }
+    else {
+        // show question
+        var element = document.getElementById("question");
+        element.innerHTML = quiz.getQuestionIndex().text;
+
+
+        // show textAnswer
+        var textAnswer = quiz.getQuestionIndex().textAnswer;
+        for(var i = 0; i < textAnswer.length; i++) {
+            var element = document.getElementById("textAnswer" + i);
+            element.innerHTML = textAnswer[i];
+        }
+
+        // show options
+        var choices = quiz.getQuestionIndex().choices;
+        for(var i = 0; i < choices.length; i++) {
+            var element = document.getElementById("choice" + i);
+            element.innerHTML = choices[i];
+            document.getElementById("btn"+ i).disabled=false;
+            guess("btn" + i, choices[i]);
+
+        }
+
+        showProgress();
+        for(var i = 0; i < quiz.getQuestionIndex().choices.length; i++) {
+            document.getElementById("btn"+ i).style.backgroundColor="#778897";
+        }
+        document.getElementById('nxtbtn').disabled = true;
+    }
+};
+
+
+function guess(id, guess) {
+    var button = document.getElementById(id);
+    button.onclick = function() {
+        quiz.guess(guess);
+
+    }
+};
+
+
+function showProgress() {
+    var currentQuestionNumber = quiz.questionIndex + 1;
+    var element = document.getElementById("progress");
+    element.innerHTML = "Question " + currentQuestionNumber + " of " + quiz.questions.length;
+};
+
+function showScores() {
+    var gameOverHTML = "<h1>Result</h1>";
+    gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
+    var element = document.getElementById("quiz");
+    element.innerHTML = gameOverHTML;
+};
+
+// create questions here
 var questions = [
-    {
-        question: "1.Care dintre urmatoarele indicatoarea anunta faptul ca urmeaza curbe periculoase?",
-        image:'',
-        answers: {
-            a: '6.png',
-            b: '1.png',
-            c: '17.png'
-
-        },
-        correctAnswer: 'a'
-    },
-    {
-        question: "2.Ce semnifică indicatorul din imagine?",
-        image:'36.png',
-        answers: {
-            a: 'Intersectie de drumuri',
-            b: 'Intersectie cu un drum fara prioritare',
-            c: 'Circulatie in ambele sensuri'
-
-        },
-        correctAnswer: 'b'
-    },
-    {
-        question: "3.Care dintre urmatoarele balize directionale indica ocolirea prin dreapta?",
-        image:'',
-        answers: {
-            a: '45.png',
-            b: '46.png',
-            c: '47.png'
-
-        },
-        correctAnswer: 'b'
-    },
-    {
-        question: "4.Ce semnificație are indicatorul din imagine?",
-        image:'44.png ',
-        answers: {
-            a: 'presemnalizarea unei intersectii cu sens giratoriu',
-            b: 'ocolirea obstacolului intalnit prin stanga',
-            c: 'presemnalizarea unei amenajari rutiere'
-
-        },
-        correctAnswer: 'c'
-    },
-    {
-        question: "5.Care indicator anunta o denivelare pentru limitarea vitezei?",
-        image:'',
-        answers: {
-            a: '18.png',
-            b: '17.png',
-            c: '25.png'
-
-        },
-        correctAnswer: 'c'
-    },
+    new Question("1.Care dintre urmatoarele indicatoarea anunta faptul ca urmeaza curbe periculoase?",
+        ["A: 6.png",
+            "B: 1.png",
+            "C: 17.png"],
+        ["A", "B","C"],
+        "A"),
+    new Question("2.Ce semnifică indicatorul din imagine? image:'36.png'",
+        ["A: Intersectie de drumuri",
+            "B: Intersectie cu un drum fara prioritare",
+            "C: Circulatie in ambele sensuri"],
+        ["A", "B","C"],
+        "B"),
+    new Question("3.Care dintre urmatoarele balize directionale indica ocolirea prin dreapta?",
+        ["A: 45.png",
+            "B: 46.png",
+            "C: 47.png"],
+        ["A", "B","C"],
+        "B"),
+    new Question("4.Ce semnificație are indicatorul din imagine?  image:'44.png '",
+        ["A: presemnalizarea unei intersectii cu sens giratoriu",
+            "B: ocolirea obstacolului intalnit prin stanga",
+            "C: presemnalizarea unei amenajari rutiere"],
+        ["A", "B","C"],
+        "C"),
+    new Question("5.Care indicator anunta o denivelare pentru limitarea vitezei?",
+         ["A: 18.png",
+             "B: 17.png",
+             "C: 25.png"],
+        ["A", "B","C"],
+        "C") 
 ];
+
+// create quiz
+var quiz = new Quiz(questions);
+
+// display quiz
+populate();
