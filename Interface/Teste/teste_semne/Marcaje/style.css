@@ -92,15 +92,14 @@ footer{
 
 #btn2 {
     background-color: #778897;
-    width: 500px;
+    width: 70%;
     font-size: 20px;
     color: #fff;
     border: 1px solid #1D3C6A;
     border-radius: 50px;
-    margin: 10px 40px 10px 100px;
+    margin: 10px 10px 10px 70px;
     padding: 10px 10px;
 }
-
 
 #btn0:hover, #btn1:hover, #btn2:hover ,#nxtbtn:hover{
     cursor: pointer;

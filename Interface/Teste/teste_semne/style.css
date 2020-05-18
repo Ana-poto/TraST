@@ -54,7 +54,12 @@ body {
 
 }
 .image img{
-    width: 40%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    padding: 5px;
+    width: 100px;
+    height: 100px;
     margin-top: 5%;
 }
 
@@ -92,12 +97,12 @@ footer{
 
 #btn2 {
     background-color: #778897;
-    width: 500px;
+    width: 70%;
     font-size: 20px;
     color: #fff;
     border: 1px solid #1D3C6A;
     border-radius: 50px;
-    margin: 10px 40px 10px 100px;
+    margin: 10px 10px 10px 70px;
     padding: 10px 10px;
 }
 
@@ -114,4 +119,24 @@ footer{
 #progress {
     color: #2b2b2b;
     font-size: 18px;
+}
+#box {
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
+.item {
+    
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 0 5px;
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.img{
+
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    
 }
