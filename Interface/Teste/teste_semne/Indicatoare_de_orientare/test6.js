@@ -1,4 +1,4 @@
-//[imaginile referetiante sunt din A_learn/Indicatoare_de_obligare]
+//[imaginile referetiante sunt din A_learn/Indicatoare_de_orientare]
 function wait(ms){
     var start = new Date().getTime();
     var end = start;
