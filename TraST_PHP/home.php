@@ -15,12 +15,12 @@
 
 
 
-<body >
+<body onload="NavBar()">
 
 <!--NAVBAR-->
 
 
-<div id="nav-background">
+<div id="nav-background" >
 
     <ul class="Left" >
         <li class="Logo">
@@ -47,40 +47,39 @@
         </li>
     </ul>
 
-
     <?php
-        session_start();
-     if(!isset($_SESSION['nickname'])){
-    ?>
-    <ul class="Right" >
-        <li class="Main">
-            <a class="NavMain" data-ui-name="Log in" href="log_in.html">
-                Log in
-            </a>
-        </li>
-        <li class="Main">
-            <a class="NavMain" data-ui-name="Sign up" href="sign_up.html">
-                Sign up
-            </a>
-        </li>
-    </ul>
-         <?php
-     }
+    session_start();
+    if(!isset($_SESSION['username'])){
+        ?>
+        <ul class="Right" >
+            <li class="Main">
+                <a class="NavMain" data-ui-name="Log in" href="log_in.html">
+                    Log in
+                </a>
+            </li>
+            <li class="Main">
+                <a class="NavMain" data-ui-name="Sign up" href="sign_up.html">
+                    Sign up
+                </a>
+            </li>
+        </ul>
+        <?php
+    }
     else
     {
         ?>
-     <ul class="Right" >
-        <li class="Main">
-            <a class="NavMain" data-ui-name="profile" href="Profile.php">
-                <?php   echo $_SESSION['nickname']; ?>
-            </a>
-        </li>
-         <li class="Main">
-             <a class="NavMain" data-ui-name="Log out" href="Auth/logout.php">
-                 Log out
-             </a>
-         </li>
-     </ul>
+        <ul class="Right" >
+            <li class="Main">
+                <a class="NavMain" data-ui-name="profile" href="Profile.php">
+                    <?php   echo $_SESSION['username']; ?>
+                </a>
+            </li>
+            <li class="Main">
+                <a class="NavMain" data-ui-name="Log out" href="Auth/logout.php">
+                    Log out
+                </a>
+            </li>
+        </ul>
         <?php
     }
     ?>
@@ -225,9 +224,6 @@
         </a>
     </div>
 </section>
-
-
-
 
 </body>
 </html>

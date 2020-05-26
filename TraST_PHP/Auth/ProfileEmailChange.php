@@ -8,11 +8,11 @@ try {
     $conn = new PDO("mysql:host=$servername;dbname=trast", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $password = $_POST['pass'];
+    $password = $_POST['pass'].'';
 
-    $new_email = $_POST['new_email'];
+    $new_email = $_POST['new_email'].'';
 
-    $email = $_POST['e-mail'];
+    $email = $_POST['e-mail'].'';
 
     $stmt = $conn->prepare("SELECT username FROM users where username= :username  and email=:email and password=:pass");
     $stmt->bindParam(':username',$_SESSION['username']);

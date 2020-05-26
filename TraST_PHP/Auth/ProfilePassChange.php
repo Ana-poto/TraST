@@ -8,11 +8,11 @@ try {
     $conn = new PDO("mysql:host=$servername;dbname=trast", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $password = $_POST['pass'];
+    $password = $_POST['pass'].'';
 
-    $new_pass = $_POST['new_pass'];
+    $new_pass = $_POST['new_pass'].'';
 
-    $email = $_POST['e-mail'];
+    $email = $_POST['e-mail'].'';
 
     $stmt = $conn->prepare("SELECT username FROM users where username= :username  and email=:email and password=:pass");
     $stmt->bindParam(':username',$_SESSION['username']);
@@ -25,8 +25,8 @@ try {
 
     }
     else{
-        if (strlen($new_pass) <16){
-            echo ("The new password is too small.");
+        if (strlen($new_pass) <16 || $password==='' || $email===''){
+            echo("The new password is too small or the password/mail do not match");
         }
         else {
             $stmt = $conn->prepare("update users  set password=:pass where username=:username");

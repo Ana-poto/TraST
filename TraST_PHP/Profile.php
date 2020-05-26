@@ -44,21 +44,8 @@
 
     <?php
     session_start();
-    if(!isset($_SESSION['nickname'])){
-        ?>
-        <ul class="Right" >
-            <li class="Main">
-                <a class="NavMain" data-ui-name="Log in" href="log_in.html">
-                    Log in
-                </a>
-            </li>
-            <li class="Main">
-                <a class="NavMain" data-ui-name="Sign up" href="sign_up.html">
-                    Sign up
-                </a>
-            </li>
-        </ul>
-        <?php
+    if(!isset($_SESSION['username'])){
+        header('location:log_in.html');
     }
     else
     {
@@ -83,38 +70,39 @@
 </div>
 
 
-<div class ="nickname"> <h5>Acc nickname</h5></div>
+<div class ="nickname"> <h5><?php   echo $_SESSION['nickname']; ?></h5></div>
 
 <div class="right-form">
+
 
     <h4 class="profile_h4">Profile Details</h4>
 
     <form class="profile_form" method="post" action="Auth/ProfileD.php">
         <p class="profile_p">
             <h3>First name:</h3>
-            <input class="input" type="text" placeholder="firstName" value="" >
+            <input class="input" type="text" placeholder="firstName" name="firstName" value=<?php echo $_SESSION['first_name'];?>  required>
         </p>
         <p class="profile_p">
             <h3>Last name:</h3>
-            <input class="input" type="text" placeholder="lastName" value="">
+            <input class="input" type="text" placeholder="lastName" name="lastName" value= <?php echo $_SESSION['last_name'];?> required>
 
         </p>
         <p class="profile_p">
             <h3>Nickname:</h3>
-            <input class="input" type="text" placeholder="nickname" value="">
+            <input class="input" type="text" placeholder="nickname" name="nickname" value=<?php echo $_SESSION['nickname'];?> required>
 
         </p>
-
         <p class="profile_p">
             <h3>Hobby:</h3>
-            <input class="input" type="text" placeholder="hobby" value="">
+            <input class="input" type="text" placeholder="hobby" name="hobby" value=<?php echo $_SESSION['hobbys'];?> required>
         </p>
 
         <p class="profile_p">
             <h3>Age:</h3>
-            <input class="input" type="text" placeholder="age" value="">
+            <input class="input" type="text" placeholder="age" name="age" value=<?php echo $_SESSION['age'];?> required>
         </p>
         <button class="Profile">Submit</button>
+
     </form>
 </div>
 <div class="left-form-top">
@@ -123,15 +111,15 @@
     <form class="profile_form" method="post" action="Auth/ProfilePassChange.php">
         <p class="profile_p">
             <h3>Password:</h3>
-            <input class="input" type="text" placeholder="pass" value="">
+            <input class="input" type="text" placeholder="pass" name="pass" required>
         </p>
         <p class="profile_p">
             <h3>New password:</h3>
-            <input class="input" type="text" placeholder="new_pass" value="">
+            <input class="input" type="text" placeholder="new_pass" name="new_pass" required>
         </p>
         <p class="profile_p">
         <h3>Mail:</h3>
-        <input class="input" type="text" placeholder="e-mail" value="">
+        <input class="input" type="text" placeholder="e-mail" name="e-mail" required>
 
         </p>
         <button class="Profile">Submit</button>
@@ -145,23 +133,19 @@
     <form class="profile_form" method="post" action="Auth/ProfileEmailChange.php">
         <p class="profile_p">
             <h3> Mail:</h3>
-            <input class="input" type="text" placeholder="e-mail" value="">
+            <input class="input" type="text" placeholder="e-mail" name="e-mail" required>
         </p>
         <p class="profile_p">
             <h3>Password:</h3>
-            <input class="input" type="text" placeholder="pass" value="">
+            <input class="input" type="text" placeholder="pass" name="pass" required>
         </p>
         <p class="profile_p">
             <h3>New mail:</h3>
-            <input class="input" type="text" placeholder="new_mail" value="">
-
+            <input class="input" type="text" placeholder="new_mail" name="new_mail" required>
         </p>
         <button class="Profile">Submit</button>
     </form>
-
 </div>
-
-
 
 </body>
 </html>
