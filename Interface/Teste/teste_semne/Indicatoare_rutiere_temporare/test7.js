@@ -115,7 +115,7 @@ function showProgress() {
 };
 
 function showScores() {
-    var gameOverHTML = "<h1>Result</h1>";
+    var gameOverHTML = "<h1  class='result'>Result</h1>";
     gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
@@ -124,31 +124,31 @@ function showScores() {
 // create questions here
 var questions = [
     new Question("1.Care semnifica un drum ingustat pe ambele parti?",
-        ["<div id='box'> <div class='item'> <img class='img' alt='image' src='3.jpg' /><p><center>A</center></p> </div> <div class='item'><img class='img' alt='image' src='2.jpg' /><p><center>B</center></p> </div> <div class='item'><img class='img' alt='image' src='1.jpg' /><p><center>C</center></p> </div> </div>",
+        ["<span> <div class='image'> <img  alt='image' src='3.png' ><center>A</center> </div> <div class='image'><img  alt='image' src='2.png' ><center>B</center> </div> <div class='image'><img  alt='image' src='1.jpg' ><center>C</center> </div> </span>",
             "",
             ""],
         ["A", "B","C"],
         "C"),
-    new Question("2.Precizați ce semnificatie are urmatorul indicator :<br> <div  class='image'> <img alt='image' src='7.jpg' /> </div> </br>",
+    new Question("2.Precizați ce semnificatie are urmatorul indicator :<br> <div  class='image'> <img alt='image' src='7.jpg' > </div> </br>",
         ["A: Improscare cu pietris",
             "B: Drum alunecos",
             "C: Acostament periculos"],
         ["A", "B","C"],
         "A"),
-    new Question("3.Ce semnifică indicatorul din imagine? <br> <div  class='image'> <img alt='image' src='12.png' /> </div> </br>",
+    new Question("3.Ce semnifică indicatorul din imagine? <br> <div  class='image'> <img alt='image' src='12.png' > </div> </br>",
         ["A: Semafoare",
             "B: Circulatie in ambele sensuri",
             "C: Prioritate pentru circulatia in sens invers"],
         ["A", "B","C"],
         "C"),
     new Question("4.Precizați care indicator anunta sfarsitul interzicerii de a depasi?",
-    ["<div id='box'> <div class='item'> <img class='img' alt='image' src='14.png' /><p><center>A</center></p> </div> <div class='item'><img class='img' alt='image' src='15.png' /><p><center>B</center></p> </div> <div class='item'><img class='img' alt='image' src='19.png' /><p><center>C</center></p> </div> </div>",
+    ["<span> <div class='image'> <img  alt='image' src='14.png' ><center>A</center> </div> <div class='image'><img  alt='image' src='15.png' ><center>B</center> </div> <div class='image'><img  alt='image' src='19.png' ><center>C</center> </div> </span>",
             "",
             ""],
         ["A", "B","C"],
         "B"),
     new Question("5.Precizați care indicator anunta terminarea unei abaterii temporare?",
-         ["<div id='box'> <div class='item'> <img class='img' alt='image' src='26.png' /><p><center>A</center></p> </div> <div class='item'><img class='img' alt='image' src='23.png' /><p><center>B</center></p> </div> <div class='item'><img class='img' alt='image' src='21.png' /><p><center>C</center></p> </div> </div>",
+         ["<span> <div class='image'> <img  alt='image' src='26.png' ><center>A</center> </div> <div class='image'><img  alt='image' src='23.png' ><center>B</center> </div> <div class='image'><img  alt='image' src='21.png' ><center>C</center> </div> </span>",
              "",
              ""],
         ["A", "B","C"],

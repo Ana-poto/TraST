@@ -115,7 +115,7 @@ function showProgress() {
 };
 
 function showScores() {
-    var gameOverHTML = "<h1>Result</h1>";
+    var gameOverHTML = "<h1  class='result'>Result</h1>";
     gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
@@ -124,31 +124,31 @@ function showScores() {
 // create questions here
 var questions = [
     new Question("1.Care dintre urmatoarele anunta un drum pentru pietoni?",
-        ["<div id='box'> <div class='item'> <img class='img' alt='image' src='10.png' /><p><center>A</center></p> </div> <div class='item'><img class='img' alt='image' src='11.png' /><p><center>B</center></p> </div> <div class='item'><img class='img' alt='image' src='12.jpg' /><p><center>C</center></p> </div> </div>",
+        ["<span> <div class='image'> <img  alt='image' src='10.png' >  <center>A</center>   </div> <div class='image'><img  alt='image' src='11.png' >  <center>B</center>   </div> <div class='image'><img  alt='image' src='12.jpg' >  <center>C</center>   </div> </span>",
             "",
             ""],
         ["A", "B","C"],
         "A"),
-    new Question("2.Precizați ce semnificatie are urmatorul indicator :<br> <div  class='image'> <img alt='image' src='13.png' /> </div> </br>",
+    new Question("2.Precizați ce semnificatie are urmatorul indicator :<br> <div  class='image'> <img alt='image' src='13.png' > </div> </br>",
         ["A: Pista comuna pentru pietoni si biciclisti",
             "B: Delimitarea pistelor pentru pietoni si biciclisti",
             "C: Pista pentru biciclete"],
         ["A", "B","C"],
         "A"),
-    new Question("3.Ce semnifică indicatorul din imagine? <br> <div  class='image'> <img alt='image' src='7.png' /> </div> </br>",
+    new Question("3.Ce semnifică indicatorul din imagine? <br> <div  class='image'> <img alt='image' src='7.png' > </div> </br>",
         ["A: Ocolire",
             "B: Intersectie cu sens giratoriu",
             "C: Obligare de circulatie pe o anumita directie"],
         ["A", "B","C"],
         "B"),
     new Question("4.Care dintre urmatoarele indica o viteza minima obligatorie?",
-    ["<div id='box'> <div class='item'> <img class='img' alt='image' src='17.png' /><p><center>A</center></p> </div> <div class='item'><img class='img' alt='image' src='14.png' /><p><center>B</center></p> </div> <div class='item'><img class='img' alt='image' src='15.jpg' /><p><center>C</center></p> </div> </div>",
+    ["<span> <div class='image'> <img  alt='image' src='17.png' >  <center>A</center>   </div> <div class='image'><img  alt='image' src='14.png' >  <center>B</center>   </div> <div class='image'><img  alt='image' src='15.jpg' >  <center>C</center>   </div> </span>",
             "",
             ""],
         ["A", "B","C"],
         "B"),
     new Question("5.Care indica directia obligatorie la dreapta pentru vehicule care transporta marfuri periculoase?",
-         ["<div id='box'> <div class='item'> <img class='img' alt='image' src='17.png' /><p><center>A</center></p> </div> <div class='item'><img class='img' alt='image' src='18.jpg' /><p><center>B</center></p> </div> <div class='item'><img class='img' alt='image' src='19.png' /><p><center>C</center></p> </div> </div>",
+         ["<span> <div class='image'> <img  alt='image' src='17.png' >  <center>A</center>   </div> <div class='image'><img  alt='image' src='18.png' >  <center>B</center>   </div> <div class='image'><img  alt='image' src='19.png' >  <center>C</center>   </div> </span>",
              "",
              ""],
         ["A", "B","C"],

@@ -115,7 +115,7 @@ function showProgress() {
 };
 
 function showScores() {
-    var gameOverHTML = "<h1>Result</h1>";
+    var gameOverHTML = "<h1  class='result'>Result</h1>";
     gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
@@ -124,25 +124,25 @@ function showScores() {
 // create questions here
 var questions = [
     new Question("1.Care semnifica prioritatea fata de circulatia din sens invers?",
-        ["<div id='box'> <div class='item'> <img class='img' alt='image' src='6.jpg' /><p><center>A</center></p> </div> <div class='item'><img class='img' alt='image' src='4.jpg' /><p><center>B</center></p> </div> <div class='item'><img class='img' alt='image' src='3.png' /><p><center>C</center></p> </div> </div>",
+        ["<span> <div class='image'> <img  alt='image' src='6.jpg' ><center>A</center> </div> <div class='image'><img  alt='image' src='4.png' ><center>B</center> </div> <div class='image'><img  alt='image' src='3.png' ><center>C</center> </div> </span>",
             "",
             ""],
         ["A", "B","C"],
         "A"),
-    new Question("2.Precizați ce semnificatie are urmatorul indicator :<br> <div  class='image'> <img alt='image' src='1.jpg' /> </div> </br>",
+    new Question("2.Precizați ce semnificatie are urmatorul indicator :<br> <div  class='image'> <img alt='image' src='1.jpg' > </div> </br>",
     ["A: Prioritatea fata de circulatia din sens invers",
     "B: Cedeaza trecerea",
     "C: Drum cu prioritate"],
         ["A", "B","C"],
         "B"),
-    new Question("3.Ce semnifică indicatorul din imagine? <br> <div  class='image'> <img alt='image' src='5.jpg' /> </div> </br>",
+    new Question("3.Ce semnifică indicatorul din imagine? <br> <div  class='image'> <img alt='image' src='5.jpg' > </div> </br>",
         ["A: Prioritatea fata de circulatia din sens invers",
             "B: Sfarsitul drumului cu prioritate",
             "C: Prioritatea fata de circulatia din sens invers, precedat de indicatorul Drum ingust"],
         ["A", "B","C"],
         "A"),
-    new Question("4.Care dintre urmatoarele poate acompania indicatorul?<br> <div  class='image'> <img alt='image' src='3.png' /> </div> </br>",
-    ["<div id='box'> <div class='item'> <img class='img' alt='image' src='1.jpg' /><p><center>A</center></p> </div> <div class='item'><img class='img' alt='image' src='5.jpg' /><p><center>B</center></p> </div> <div class='item'><img class='img' alt='image' src='6.jpg' /><p><center>C</center></p> </div> </div>",
+    new Question("4.Care dintre urmatoarele poate acompania indicatorul?<br> <div  class='image'> <img alt='image' src='3.png' > </div> </br>",
+    ["<span> <div class='image'> <img  alt='image' src='1.jpg' ><center>A</center> </div> <div class='image'><img  alt='image' src='5.jpg' ><center>B</center> </div> <div class='image'><img  alt='image' src='6.jpg' ><center>C</center> </div> </span>",
             "",
             ""],
         ["A", "B","C"],

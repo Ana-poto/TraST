@@ -194,6 +194,10 @@ button{
     justify-content: center;
 }
 
+.Total h5{
+    color: #111111;
+}
+}
 .TestTotal .Total :hover{
     box-shadow: 0 0 0.1px rgba(255, 0, 0, 0.6);
     border: 0px outset rgba(255, 0, 0, 0.6);
@@ -202,7 +206,7 @@ button{
 
 .sign_image{
     margin: 8%;
-    width: 80%;
+    width: 70%;
 }
 
 

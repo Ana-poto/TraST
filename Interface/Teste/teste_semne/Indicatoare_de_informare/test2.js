@@ -116,7 +116,7 @@ function showProgress() {
 };
 
 function showScores() {
-    var gameOverHTML = "<h1>Result</h1>";
+    var gameOverHTML = "<h1  class='result'>Result</h1>";
     gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
@@ -125,30 +125,30 @@ function showScores() {
 // create questions here
 var questions = [
     new Question("1.Care dintre urmatoarele indica sfarsit de autostrada?",
-        ["<div id='box'> <div class='item'> <img class='img' alt='image' src='6.png' /><p><center>A</center></p> </div> <div class='item'><img class='img' alt='image' src='7.png' /><p><center>B</center></p> </div> <div class='item'><img class='img' alt='image' src='18.jpg' /><p><center>C</center></p> </div> </div>",
+        ["<span> <div class='image'> <img  alt='image' src='6.jpg' > <center>A</center>  </div> <div class='image'><img  alt='image' src='7.png' > <center>B</center>  </div> <div class='image'><img  alt='image' src='18.png' > <center>C</center>  </div> </span>",
             "",
             ""],
         ["A", "B","C"],
         "B"),
-    new Question("2.Precizați ce semnificatie are urmatorul indicator : <br> <div  class='image'> <img alt='image' src='73.png' /> </div> </br>",
+    new Question("2.Precizați ce semnificatie are urmatorul indicator : <br> <div  class='image'> <img alt='image' src='73.png' > </div> </br>",
         ["A: Monitorizare trafic",
             "B: Control radar",
             "C: Service auto"],
         ["A", "B","C"],
         "A"),
-    new Question("3.Ce semnifică indicatorul din imagine? <br> <div  class='image'> <img alt='image' src='27.jpg' /> </div> </br>",
+    new Question("3.Ce semnifică indicatorul din imagine? <br> <div  class='image'> <img alt='image' src='27.png' > </div> </br>",
         ["A: Teren de camping",
             "B: Loc de popas",
             "C: Cabana pentru turisti"],
         ["A", "B","C"],
         "A"),
     new Question("4.Care dintre urmatoarele semnifica drum pentru autovehicule?",
-        ["<div id='box'> <div class='item'> <img class='img' alt='image' src='14.jpg' /><p><center>A</center></p> </div> <div class='item'><img class='img' alt='image' src='17.png' /><p><center>B</center></p> </div> <div class='item'><img class='img' alt='image' src='28.png' /><p><center>C</center></p> </div> </div>",
+        ["<span> <div class='image'> <img  alt='image' src='14.png' > <center>A</center>  </div> <div class='image'><img  alt='image' src='17.jpg' > <center>B</center>  </div> <div class='image'><img  alt='image' src='28.png' > <center>C</center>  </div> </span>",
             "",
             ""],
         ["A", "B","C"],
         "B"),
-    new Question("5.Ce semnificație are indicatorul din imagine? <br> <div  class='image'> <img alt='image' src='38.png' /> </div> </br>",
+    new Question("5.Ce semnificație are indicatorul din imagine? <br> <div  class='image'> <img alt='image' src='38.png' > </div> </br>",
          ["A: Zona residentiala",
              "B: Complex de servicii",
              "C: Restaurant"],

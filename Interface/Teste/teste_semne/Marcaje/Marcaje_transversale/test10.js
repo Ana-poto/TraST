@@ -115,7 +115,7 @@ function showProgress() {
 };
 
 function showScores() {
-    var gameOverHTML = "<h1>Result</h1>";
+    var gameOverHTML = "<h1  class='result'>Result</h1>";
     gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
@@ -124,19 +124,19 @@ function showScores() {
 // create questions here
 var questions = [
     new Question("1.Care este un marcaj de cedarea trecerii?",
-        ["<div id='box'> <div class='item'> <img class='img' alt='image' src='1.png' /><p><center>A</center></p> </div> <div class='item'><img class='img' alt='image' src='2.png' /><p><center>B</center></p> </div> <div class='item'><img class='img' alt='image' src='4.png' /><p><center>C</center></p> </div> </div>",
+        ["<span> <div class='image'> <img  alt='image' src='1.png' ><center>A</center> </div> <div class='image'><img  alt='image' src='2.png' ><center>B</center> </div> <div class='image'><img  alt='image' src='4.png' ><center>C</center> </div> </span>",
             "",
             ""],
         ["A", "B","C"],
         "B"),
-    new Question("2.Unde se amplaseaza benzile rezonante din marcaj rutier:<br> <div  class='image'> <img alt='image' src='3.png' /> </div> </br>",
+    new Question("2.Unde se amplaseaza benzile rezonante din marcaj rutier:<br> <div  class='image'> <img alt='image' src='3.png' > </div> </br>",
         ["A: pe autostrazi",
             "B: pe drumuri expres si pe drumuri nationale",
             "C: ambele"],
         ["A", "B","C"],
         "B"),
     new Question("3.Care este un marcaj de traversare pentru biciclete",
-        ["<div id='box'> <div class='item'> <img class='img' alt='image' src='5.png' /><p><center>A</center></p> </div> <div class='item'><img class='img' alt='image' src='4.png' /><p><center>B</center></p> </div> <div class='item'><img class='img' alt='image' src='1.png' /><p><center>C</center></p> </div> </div>",
+        ["<span> <div class='image'> <img  alt='image' src='5.png' ><center>A</center> </div> <div class='image'><img  alt='image' src='4.png' ><center>B</center> </div> <div class='image'><img  alt='image' src='1.png' ><center>C</center> </div> </span>",
             "",
             ""],
         ["A", "B","C"],

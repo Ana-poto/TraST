@@ -115,7 +115,7 @@ function showProgress() {
 };
 
 function showScores() {
-    var gameOverHTML = "<h1>Result</h1>";
+    var gameOverHTML = "<h1  class='result'>Result</h1>";
     gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
@@ -124,30 +124,30 @@ function showScores() {
 // create questions here
 var questions = [
     new Question("1.Care semnifica presemnalizarea directiilor intr-o intersectie cu sens giratoriu?",
-        ["A: 5.png",
-            "B: 2.png",
-            "C: 7.png"],
-        ["A", "B","C"],
-        "A"),
-    new Question("2.Precizați ce semnificatie are urmatorul indicator :image:'8.png '",
+    ["<span> <div class='image'> <img  alt='image' src='5.png' ><center>A</center> </div> <div class='image'><img  alt='image' src='2.png' ><center>B</center> </div> <div class='image'><img  alt='image' src='7.png' ><center>C</center> </div> </span>",
+    "",
+    ""],
+["A", "B","C"],
+"A"),
+    new Question("2.Precizați ce semnificatie are urmatorul indicator <br> <div  class='image'> <img alt='image' src='8.png' > </div> </br>",
     ["A: Presemnalizarea pe autostrada a unui spatiu de servicii",
     "B: Presemnalizarea pe autostrada pentru parcare",
     "C: Presemnalizarea unui loc periculos/o intersectie sau o restricitie"],
         ["A", "B","C"],
         "B"),
-    new Question("3.Ce semnifică indicatorul din imagine? image:'2.png'",
+    new Question("3.Ce semnifică indicatorul din imagine? <br> <div  class='image'> <img alt='image' src='2.png' > </div> </br>",
         ["A: Presemnalizarea directiilor indicate",
             "B: Presemnalizarea directiilor la o intersectie denivelata de drumuri",
             "C: Presemnalizarea directiilor intr-o intersectie cu sens giratoriu"],
         ["A", "B","C"],
         "B"),
     new Question("4.Care dintre urmatoarele indica limite de viteza pentru diferite benzi de circulatie?",
-    ["A: 24.png",
-            "B: 26.png",
-            "C: 27.png"],
-        ["A", "B","C"],
-        "B"),
-    new Question("5.Ce semnifica urmatorul indicator? image:'52.png'",
+    ["<span> <div class='image'> <img  alt='image' src='24.png' ><center>A</center> </div> <div class='image'><img  alt='image' src='26.jpg' ><center>B</center> </div> <div class='image'><img  alt='image' src='27.jpg' ><center>C</center> </div> </span>",
+    "",
+    ""],
+    ["A", "B","C"],
+    "B"),
+    new Question("5.Ce semnifica urmatorul indicator? <br> <div  class='image'> <img alt='image' src='52.png' > </div> </br>",
          ["A: Organizarea traficului pe benzi de circulatie",
              "B: Directia de urmat in cazul devierii temporare a circulatiei",
              "C: Banda de circulatie rezervata autovehiculelor de transport public de persoane"],

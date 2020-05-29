@@ -115,8 +115,8 @@ function showProgress() {
 };
 
 function showScores() {
-    var gameOverHTML = "<h1>Result</h1>";
-    gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
+    var gameOverHTML = "<h1 class='result'>Result</h1>";
+    gameOverHTML += "<h2 id='score'> Your score: " + quiz.score + "</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
 };
@@ -124,31 +124,31 @@ function showScores() {
 // create questions here
 var questions = [
     new Question("1.Care dintre urmatoarele indicatoarea anunta faptul ca urmeaza curbe periculoase?",
-        ["<div id='box'> <div class='item'> <img class='img' alt='image' src='6.jpg' /><p><center>A</center></p> </div> <div class='item'><img class='img' alt='image' src='17.jpg' /><p><center>B</center></p> </div> <div class='item'><img class='img' alt='image' src='1.jpg' /><p><center>C</center></p> </div> </div>",
+        ["<span> <div class='image'> <img  alt='image' src='6.png' >  <center>A</center>   </div> <div class='image'><img  alt='image' src='17.jpg' >  <center>B</center>   </div> <div class='image'><img  alt='image' src='1.png' >  <center>C</center>   </div></span>",
             "",
             ""],
         ["A", "B","C"],
         "A"),
-    new Question("2.Ce semnifică indicatorul din imagine? <br> <div  class='image'> <img alt='image' src='36.png' /> </div> </br>",
+    new Question("2.Ce semnifică indicatorul din imagine? <br> <div  class='image'> <img alt='image' src='36.png' > </div> </br>",
         ["A: Intersectie de drumuri",
             "B: Intersectie cu un drum fara prioritare",
             "C: Circulatie in ambele sensuri"],
         ["A", "B","C"],
         "B"),
     new Question("3.Care dintre urmatoarele balize directionale indica ocolirea prin dreapta?",
-        ["<div id='box'> <div class='item'> <img class='img' alt='image' src='45.jpg' /><p><center>A</center></p> </div> <div class='item'><img class='img' alt='image' src='46.jpg' /><p><center>B</center></p> </div> <div class='item'><img class='img' alt='image' src='47.jpg' /><p><center>C</center></p> </div> </div>",
+        ["<span> <div class='image'> <img  alt='image' src='45.jpg' >  <center>A</center>   </div> <div class='image'><img  alt='image' src='46.jpg' >  <center>B</center>   </div> <div class='image'><img  alt='image' src='47.jpg' >  <center>C</center>   </div> </span>",
             "",
             ""],
         ["A", "B","C"],
         "B"),
-    new Question("4.Ce semnificație are indicatorul din imagine? <br> <div  class='image'> <img alt='image' src='44.jpg' /> </div> </br>",
+    new Question("4.Ce semnificație are indicatorul din imagine? <br> <div  class='image'> <img alt='image' src='44.png' > </div> </br>",
         ["A: presemnalizarea unei intersectii cu sens giratoriu",
             "B: ocolirea obstacolului intalnit prin stanga",
             "C: presemnalizarea unei amenajari rutiere"],
         ["A", "B","C"],
         "C"),
     new Question("5.Care indicator anunta o denivelare pentru limitarea vitezei?",
-         ["<div id='box'> <div class='item'> <img class='img' alt='image' src='18.jpg' /><p><center>A</center></p> </div> <div class='item'><img class='img' alt='image' src='17.jpg' /><p><center>B</center></p> </div> <div class='item'><img class='img' alt='image' src='25.jpg' /><p><center>C</center></p> </div> </div>",
+         ["<span> <div class='image'> <img  alt='image' src='18.png' >  <center>A</center>   </div> <div class='image'><img  alt='image' src='17.jpg' >  <center>B</center>   </div> <div class='image'><img  alt='image' src='25.png' >  <center>C</center>   </div></span>",
              "",
              ""],
         ["A", "B","C"],

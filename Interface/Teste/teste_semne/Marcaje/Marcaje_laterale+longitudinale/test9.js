@@ -116,20 +116,20 @@ function showProgress() {
 };
 
 function showScores() {
-    var gameOverHTML = "<h1>Result</h1>";
+    var gameOverHTML = "<h1  class='result'>Result</h1>";
     gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
 };
 var questions = [
     new Question("1.Care dintre urmatoarele este un marcaj de reducere a vitezei inaitea unor curbe deosebit de periculoase?",
-        ["<div id='box'> <div class='item'> <img class='img' alt='image' src='10.png' /><p><center>A</center></p> </div> <div class='item'><img class='img' alt='image' src='11.png' /><p><center>B</center></p> </div> <div class='item'><img class='img' alt='image' src='9.png' /><p><center>C</center></p> </div> </div>",
+        ["<span><div class='image'><img  alt='image' src='10.png'><center>A</center> </div> <div class='image'><img  alt='image' src='11.png'><center>B</center> </div> <div class='image'><img  alt='image' src='9.png'><center>C</center></div> </span>",
             "",
             ""],
         ["A", "B","C"],
         "C"),
     new Question("2.Care este un marcaj la apropierea de o intersectie?",
-    ["<div id='box'> <div class='item'> <img class='img' alt='image' src='010.png' /><p><center>A</center></p> </div> <div class='item'><img class='img' alt='image' src='8.png' /><p><center>B</center></p> </div> <div class='item'><img class='img' alt='image' src='7.png' /><p><center>C</center></p> </div> </div>",
+    ["<span> <div class='image'> <img  alt='image' src='010.png' ><center>A</center></div><div class='image'><img  alt='image' src='8.png' ><center>B</center> </div><div class='image'><img  alt='image' src='7.png' ><center>C</center> </div></span>",
     "",
     ""],
     ["A", "B","C"],

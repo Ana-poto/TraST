@@ -115,7 +115,7 @@ function showProgress() {
 };
 
 function showScores() {
-    var gameOverHTML = "<h1>Result</h1>";
+    var gameOverHTML = "<h1  class='result'>Result</h1>";
     gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
@@ -124,25 +124,25 @@ function showScores() {
 // create questions here
 var questions = [
     new Question("1.Care dintre urmatoarele anunta un marcaj la ingustarea drumului cu o banda de sens?",
-        ["<div id='box'> <div class='item'> <img class='img' alt='image' src='5.png' /><p><center>A</center></p> </div> <div class='item'><img class='img' alt='image' src='3.png' /><p><center>B</center></p> </div> <div class='item'><img class='img' alt='image' src='4.png' /><p><center>C</center></p> </div> </div>",
+        ["<span> <div class='image'> <img  alt='image' src='5.png' ><center>A</center> </div> <div class='image'><img  alt='image' src='3.png' ><center>B</center> </div> <div class='image'><img  alt='image' src='4.png' ><center>C</center> </div> </span>",
             "",
             ""],
         ["A", "B","C"],
         "C"),
-    new Question("2.Precizați ce semnificatie are urmatorul indicator :<br> <div  class='image'> <img alt='image' src='6.png' /> </div> </br>", 
+    new Question("2.Precizați ce semnificatie are urmatorul indicator :<br> <div  class='image'> <img alt='image' src='6.png' > </div> </br>", 
         ["A: Spatii interzise circulatiei",
             "B: Interzicerea stationarii",
             "C: Locuri de parcare"],
         ["A", "B","C"],
         "A"),
-    new Question("3.Ce semnifică indicatorul din imagine? <br> <div  class='image'> <img alt='image' src='9.png' /> </div> </br>",
+    new Question("3.Ce semnifică indicatorul din imagine? <br> <div  class='image'> <img alt='image' src='9.png' > </div> </br>",
         ["A: Locuri de parcare",
             "B: Spatii autovehicule de transport persoane",
             "C: Obligare de circulatie pe o anumita directie"],
         ["A", "B","C"],
         "B"),
     new Question("4.Care dintre urmatoarele este un marcaj pentru spatii inguste?",
-    ["<div id='box'> <div class='item'> <img class='img' alt='image' src='3.png' /><p><center>A</center></p> </div> <div class='item'><img class='img' alt='image' src='4.png' /><p><center>B</center></p> </div> <div class='item'><img class='img' alt='image' src='5.png' /><p><center>C</center></p> </div> </div>",
+    ["<span> <div class='image'> <img  alt='image' src='3.png' ><center>A</center> </div> <div class='image'><img  alt='image' src='4.png' ><center>B</center> </div> <div class='image'><img  alt='image' src='5.png' ><center>C</center> </div> </span>",
             "",
             ""],
         ["A", "B","C"],

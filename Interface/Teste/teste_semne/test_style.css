@@ -1,11 +1,19 @@
 body {
     background-color: #eeeeee;
+    color:black;
 }
 
+span{
+    margin: 1% 1% 1% 5%;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+}
 .grid {
-    width: 70%;
-    height: 55%;
-    margin: 0 auto;
+    font-size: 10px;
+    width: 50%;
+    height: 30%;
+    margin: 5% auto;
     background-color: #fff;
     padding: 10px 50px 50px 50px;
     border-radius: 50px;
@@ -13,16 +21,22 @@ body {
     box-shadow: 10px 15px 5px #cbcbcb;
 }
 
+center{
+    margin-left: 3px;
+    color:black;
+}
 .grid h1 {
     font-family: "sans-serif";
-    background-color: #57636e;
     font-size: 60px;
+    color:rgb(48,48,48);
     text-align: center;
-    color: #ffffff;
     padding: 2px 0px;
     border-radius: 50px;
 }
 
+.result{
+    margin:60px;
+}
 #score {
     color: #5A6772;
     text-align: center;
@@ -30,16 +44,22 @@ body {
 }
 
 .grid #question {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     font-family: "monospace";
-    font-size: 20px;
+    font-size: 18px;
+    margin:20px;
     color: BLACK;
     justify-content: center;
 }
 
-
+.grid1{
+    font-size: 15px;
+}
 .grid1 #textAnswer {
     font-family: "monospace";
-    font-size: 5%;
+    font-size: 17px;
     color: #5A6772;
 }
 .grid1 ul{
@@ -48,24 +68,28 @@ body {
     font-size: 110%;
 }
 
-.image {
+.image { 
+    width: 60%;
     display: flex;
     justify-content: center;
 
 }
 .image img{
-    width: 40%;
+    width: 50%;
     margin-top: 5%;
 }
 
 .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin-top: 30px;
     margin-left: 10%;
 }
 
-#btn0, #btn1 {
+#btn0, #btn1,#btn2 {
     background-color: #778897;
-    width: 40%;
+    width:150px;
     font-size: 20px;
     color: #fff;
     border: 1px solid #1D3C6A;
@@ -75,12 +99,11 @@ body {
 }
 footer{
     display:flex;
-    margin-top: 3%;
     justify-content: space-between;
 }
 #nxtbtn{
     background-color: #778897;
-    width: 20%;
+    width: 100px;
     font-size: 150%;
     color: #fff;
     border: 1px solid #1D3C6A;
@@ -90,16 +113,16 @@ footer{
 
 }
 
-#btn2 {
+/* #btn2 {
     background-color: #778897;
-    width: 70%;
+    width: 150px;
     font-size: 20px;
     color: #fff;
     border: 1px solid #1D3C6A;
     border-radius: 50px;
     margin: 10px 10px 10px 70px;
     padding: 10px 10px;
-}
+} */
 
 
 #btn0:hover, #btn1:hover, #btn2:hover ,#nxtbtn:hover{
@@ -114,4 +137,5 @@ footer{
 #progress {
     color: #2b2b2b;
     font-size: 18px;
+    margin: 20px;
 }

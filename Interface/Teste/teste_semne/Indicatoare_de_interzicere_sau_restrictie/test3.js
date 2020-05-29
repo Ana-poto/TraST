@@ -115,7 +115,7 @@ function showProgress() {
 };
 
 function showScores() {
-    var gameOverHTML = "<h1>Result</h1>";
+    var gameOverHTML = "<h1  class='result'>Result</h1>";
     gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
@@ -124,30 +124,30 @@ function showScores() {
 // create questions here
 var questions = [
     new Question("1.Care dintre urmatoarele indica intoarcerea interzisa?",
-        ["<div id='box'> <div class='item'> <img class='img' alt='image' src='25.jpg' /><p><center>A</center></p> </div> <div class='item'><img class='img' alt='image' src='23.jpg' /><p><center>B</center></p> </div> <div class='item'><img class='img' alt='image' src='24.jpg' /><p><center>C</center></p> </div> </div>",
+        ["<span> <div class='image'> <img  alt='image' src='25.jpg' >  <center>A</center>   </div> <div class='image'><img  alt='image' src='23.jpg' >  <center>B</center>   </div> <div class='image'><img  alt='image' src='24.jpg' >  <center>C</center>   </div> </span>",
             "",
             ""],
         ["A", "B","C"],
         "A"),
-    new Question("2.Precizați ce semnificatie are urmatorul indicator :<br> <div  class='image'> <img alt='image' src='30.jpg' /> </div> </br>",
+    new Question("2.Precizați ce semnificatie are urmatorul indicator :<br> <div  class='image'> <img alt='image' src='30.jpg' > </div> </br>",
         ["A: Claxonarea complet interzisa",
             "B: Claxonarea interzisa intre 6:00-22:00, cu exceptii",
             "C: Claxonarea permisa"],
         ["A", "B","C"],
         "A"),
-    new Question("3.Ce semnifică indicatorul din imagine? <br> <div  class='image'> <img alt='image' src='36.png' /> </div> </br>",
+    new Question("3.Ce semnifică indicatorul din imagine? <br> <div  class='image'> <img alt='image' src='36.png' > </div> </br>",
         ["A: Sfarsitul interzicerii de a depasi",
             "B: Sfarsitul tuturor restrictiilor",
             "C: Sfarsitul zonei de stationare cu durata limitata"],
         ["A", "B","C"],
         "A"),
     new Question("4.Care dintre urmatoarele anunta faptul ca stationarea vehiculelor in zilele pare este interzisa?",
-    ["<div id='box'> <div class='item'> <img class='img' alt='image' src='39.jpg' /><p><center>A</center></p> </div> <div class='item'><img class='img' alt='image' src='37.jpg' /><p><center>B</center></p> </div> <div class='item'><img class='img' alt='image' src='40.jpg' /><p><center>C</center></p> </div> </div>",
+    ["<span> <div class='image'> <img  alt='image' src='39.jpg' >  <center>A</center>   </div> <div class='image'><img  alt='image' src='37.jpg' >  <center>B</center>   </div> <div class='image'><img  alt='image' src='40.jpg' >  <center>C</center>   </div> </span>",
             "",
             ""],
         ["A", "B","C"],
         "C"),
-    new Question("5.Ce semnificație are indicatorul din imagine?<br> <div  class='image'> <img alt='image' src='47.png' /> </div> </br>",
+    new Question("5.Ce semnificație are indicatorul din imagine?<br> <div  class='image'> <img alt='image' src='47.png' > </div> </br>",
          ["A: Accesul interzis vehiculelor care transporta substante explozive",
              "B: Accesul interzis vehiculelor care transporta marfuri periculoase",
              "C: Accesul interzis vehiculelor care transporta substante care polueaza apele"],
