@@ -1,3 +1,7 @@
+body{
+    background: url('CSS_pics/texture.png'),radial-gradient(circle, #93a5cf 0%, #e4efe9 100%);
+    background-color: rgba(176, 191, 217,10);
+}
 
 .log_box, .sign_box h1{
     color: darkgoldenrod;
@@ -21,18 +25,17 @@
 
 }
 
-.log_box input[type=text], input[type=password], .sign_box input[type=text], input[type=password] {
-    border:0;
+input[type=text], input[type=password], input[type=email]{
     background: none;
     display: block;
     margin: 20px auto;
     text-align: center;
-    font-family: "Baskerville Old Face";
+    font-family: 'Baskerville Old Face';
     font-size: larger;
-    border: 1.4px solid #888;
+    border: 1px solid #888;
     outline: none;
     border-radius: 15px;
-    width: 200px;
+    width: 70%;
     height: 45px;
     color: black;
     padding: 0;
@@ -42,7 +45,7 @@
 
 .log_box input[type=text]:focus, input[type=password]:focus {
     background: #85B3D1FF;
-    width: 250px;
+    width: 90%;
     border:1.75px solid #111111;
 }
 
@@ -85,27 +88,10 @@
     border-radius: 25%;
 }
 
-.sign_box input[type=email]{
-    border:0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    font-family: "Baskerville Old Face";
-    font-size: larger;
-    border: 1.4px solid #888;
-    outline: none;
-    border-radius: 15px;
-    width: 200px;
-    height: 45px;
-    color: black;
-    padding: 0;
-    transition: 0.2s;
 
-}
 .sign_box input[type=text]:focus, input[type=password]:focus , input[type=email]:focus{
     background: #85B3D1FF;
-    width: 250px;
+    width: 90%;
     border:1.75px solid #111111;
 }
 
@@ -117,10 +103,10 @@
 
 
 
-@media screen and (max-width: 650px) {
-    .log_box{
+@media screen and (max-width: 860px) {
+    .log_box,.sign_box{
         display: block;
-        width: 400px;
-        height: 100px ;
+        width: 50%;
+        height: 70% ;
     }
 }

@@ -55,18 +55,17 @@ body{
     margin: 3%;
 }
 
-.dropdown-content{
+.dropdown-content, .dropdown-content2{
     display: none;
     justify-content: center;
     position: relative;
-
     background-color: #424242;
     width: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
 }
 
-.dropdown-content a{
+.dropdown-content a,.dropdown-content2 a{
     color: #FFF8DC;
     text-decoration: none;
     display: block;
@@ -85,7 +84,7 @@ button{
     font-size: 150%;
 }
 
-.Main:hover .dropdown-content{display: block;}
+.Main:hover .dropdown-content {display: block;}
 
 
 .home {
@@ -157,12 +156,21 @@ button{
     font-size: 300%;
     color: #FFF8DC;
 }
-#home_image{
-    margin: 30px;
+#home_image img{
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    overflow: hidden;
+    justify-content: center;
+    align-self: center;
 }
-.Learn\&study{
-    margin: 5% 8% 8%;
-    bottom: 5%;
+
+.Learn\&study2,.Learn\&study{
+    margin: 5% 8% 8% 5%;
+}
+.Learn\&study2{
+    margin-top: 15%;
 }
 .TestTotal{
     margin-top:-2% ;
@@ -175,6 +183,7 @@ button{
     grid-column-gap: 3%;
     grid-template-columns: repeat(4, minmax(0px, 1fr));
 }
+
 .Learn a, .Study a,.Total a{
     margin: 1.75%;
     border: 1px solid rgba(0, 0, 0, 0.15);
@@ -183,9 +192,9 @@ button{
     flex-flow: column;
     text-decoration: none;
 }
-.Learn\&study .Learn :hover,.Learn\&study .Study :hover{
-    box-shadow: 0 0 0.1px rgba(255, 0, 0, 0.6);
-    border: 0px outset rgba(255, 0, 0, 0.6);
+.Learn\&study .Learn :hover,.Learn\&study .Study :hover,.Learn\&study2 .Learn :hover,.Learn\&study2 .Study :hover{
+    box-shadow: 0 0 1px rgba(255, 0, 0, 0.6);
+    border: 0 outset rgba(255, 0, 0, 0.6);
     transition: all 0.6s;
 
 }
@@ -197,10 +206,10 @@ button{
 .Total h5{
     color: #111111;
 }
-}
+
 .TestTotal .Total :hover{
-    box-shadow: 0 0 0.1px rgba(255, 0, 0, 0.6);
-    border: 0px outset rgba(255, 0, 0, 0.6);
+    box-shadow: 0 0 1px rgba(255, 0, 0, 0.6);
+    border: 0 outset rgba(255, 0, 0, 0.6);
     transition: all 0.6s;
 }
 
@@ -211,7 +220,7 @@ button{
 
 
 h5{
-    margin-top: 0%;
+    margin-top: 0;
     margin-bottom: 2%;
     font-size: 120%;
     color: #FFF8DC;
@@ -239,17 +248,109 @@ h2{
     transition: all 0.6s;
 }
 table {
+    margin-left: 10%;
+    margin-right: 10%;
     width: 80%;
     position: relative;
-    font-size: 150%;
-    left: 10%;
-    right: 10%;
     border-collapse: collapse;
     text-align: left;
 }
 
-table, th {
+th {
     border: 1px outset black;
+    font-size: 150%;
 }
+
+td{
+    font-size: 160%;
+}
+
+.sidenav{
+    display: none;
+}
+
+@media only screen and (max-width: 495px) {
+    th {
+        border: 1px outset black;
+        font-size: 100%;
+    }
+}
+@media only screen and (max-width: 860px) {
+    #nav-background{
+        display: none;
+    }
+    .sidenav {
+
+        display: block;
+        height: 40px;
+        width: 60px;
+        position: fixed;
+        margin-top: 0;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        color: #111;
+        padding-top: 20px;
+    }
+
+    .sidenav a{
+        border-radius: 50%;
+        margin-top: 0;
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+        border: none;
+        background: none;
+        width: auto;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+    }
+    .sidenav a img{
+        margin-top: 0;
+        transform: translate(-23%,-40%);
+        width: 50px;
+    }
+    .sidenav:hover, .sidenav:active{
+        height: 100%;
+        width: 75%;
+        position: fixed;
+        margin-top: 0;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        padding-top: 20px;
+    }
+    .sidenav:hover a {
+        margin-top: 0;
+        justify-content: center;
+    }
+    .sidenav:hover .dropdown-container, .sidenav:active .dropdown-container{
+        display: block;
+    }
+    .dropdown-container {
+        display: none;
+        padding-left: 8px;
+    }
+    .dropdown-container a:hover, .dropdown-container a:active{
+        color: darkgoldenrod;
+    }
+    #Moto{
+        margin-top: 15%;
+    }
+    .Learn, .Study, .Total{
+        width: 100%;
+        display: grid;
+        grid-row-gap: 0.75rem;
+        grid-column-gap: 3%;
+        grid-template-columns: repeat(2, minmax(0px, 1fr));
+    }
+
+
+}
+
+
 
 .hovering:hover {background-color: #f5f5f5;}

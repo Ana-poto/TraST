@@ -1,17 +1,12 @@
 
 .center {
     padding: 5px;
-    margin-top: 20px;
     display: block;
-    margin-left: 3cm;
-    margin-right: 3cm;
-    max-width: 20%;
-    min-width: 15%;
-    min-height: 8cm;
-    max-height: 8cm;
+    width: auto;
+
     box-shadow: 2px 8px 6px 6px grey;
-    margin-bottom: 1cm;
-    margin-top: 1cm;
+    margin: 5% 3% 3% 5%;
+
     border-radius: 8px;
 }
 
