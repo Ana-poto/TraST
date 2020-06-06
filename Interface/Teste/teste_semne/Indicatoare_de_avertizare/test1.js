@@ -124,35 +124,35 @@ function showScores() {
 // create questions here
 var questions = [
     new Question("1.Care dintre urmatoarele indicatoarea anunta faptul ca urmeaza curbe periculoase?",
-        ["<span> <div class='image'> <img  alt='image' src='6.png' >  <center>A</center>   </div> <div class='image'><img  alt='image' src='17.jpg' >  <center>B</center>   </div> <div class='image'><img  alt='image' src='1.png' >  <center>C</center>   </div></span>",
+        ["<span> <div class='image'> <img  alt='image' src='6.png'>  A   </div> <div class='image'><img  alt='image' src='17.jpg' >  B  </div> <div class='image'><img  alt='image' src='1.png' >  C   </div></span>",
             "",
             ""],
         ["A", "B","C"],
         "A"),
-    new Question("2.Ce semnifică indicatorul din imagine? <br> <div  class='image'> <img alt='image' src='36.png' > </div> </br>",
+    new Question("2.Ce semnifică indicatorul din imagine?<br>  <div  class='image_q'> <img alt='image' src='36.png' > </div> ",
         ["A: Intersectie de drumuri",
             "B: Intersectie cu un drum fara prioritare",
             "C: Circulatie in ambele sensuri"],
         ["A", "B","C"],
         "B"),
     new Question("3.Care dintre urmatoarele balize directionale indica ocolirea prin dreapta?",
-        ["<span> <div class='image'> <img  alt='image' src='45.jpg' >  <center>A</center>   </div> <div class='image'><img  alt='image' src='46.jpg' >  <center>B</center>   </div> <div class='image'><img  alt='image' src='47.jpg' >  <center>C</center>   </div> </span>",
+        ["<span> <div class='image'> <img  alt='image' src='45.jpg' >  A   </div> <div class='image'><img  alt='image' src='46.jpg' >  B   </div> <div class='image'><img  alt='image' src='47.jpg' >  C   </div> </span>",
             "",
             ""],
         ["A", "B","C"],
         "B"),
-    new Question("4.Ce semnificație are indicatorul din imagine? <br> <div  class='image'> <img alt='image' src='44.png' > </div> </br>",
+    new Question("4.Ce semnificație are indicatorul din imagine? <br> <div  class='image_q'> <img alt='image' src='44.png' > </div> </br>",
         ["A: presemnalizarea unei intersectii cu sens giratoriu",
             "B: ocolirea obstacolului intalnit prin stanga",
             "C: presemnalizarea unei amenajari rutiere"],
         ["A", "B","C"],
         "C"),
     new Question("5.Care indicator anunta o denivelare pentru limitarea vitezei?",
-         ["<span> <div class='image'> <img  alt='image' src='18.png' >  <center>A</center>   </div> <div class='image'><img  alt='image' src='17.jpg' >  <center>B</center>   </div> <div class='image'><img  alt='image' src='25.png' >  <center>C</center>   </div></span>",
+         ["<span> <div class='image'> <img  alt='image' src='18.png' >  A   </div> <div class='image'><img  alt='image' src='17.jpg' >  B   </div> <div class='image'><img  alt='image' src='25.png' >  C   </div></span>",
              "",
              ""],
         ["A", "B","C"],
-        "C") 
+        "C")
 ];
 
 // create quiz

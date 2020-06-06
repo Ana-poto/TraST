@@ -123,13 +123,13 @@ function showScores() {
 };
 var questions = [
     new Question("1.Care dintre urmatoarele este un marcaj de reducere a vitezei inaitea unor curbe deosebit de periculoase?",
-        ["<span><div class='image'><img  alt='image' src='10.png'><center>A</center> </div> <div class='image'><img  alt='image' src='11.png'><center>B</center> </div> <div class='image'><img  alt='image' src='9.png'><center>C</center></div> </span>",
+        ["<span><div class='image'><img  alt='image' src='10.png'>A </div> <div class='image'><img  alt='image' src='11.png'>B </div> <div class='image'><img  alt='image' src='9.png'>C</div> </span>",
             "",
             ""],
         ["A", "B","C"],
         "C"),
     new Question("2.Care este un marcaj la apropierea de o intersectie?",
-    ["<span> <div class='image'> <img  alt='image' src='010.png' ><center>A</center></div><div class='image'><img  alt='image' src='8.png' ><center>B</center> </div><div class='image'><img  alt='image' src='7.png' ><center>C</center> </div></span>",
+    ["<span> <div class='image'> <img  alt='image' src='010.png' >A</div><div class='image'><img  alt='image' src='8.png' >B </div><div class='image'><img  alt='image' src='7.png' >C </div></span>",
     "",
     ""],
     ["A", "B","C"],

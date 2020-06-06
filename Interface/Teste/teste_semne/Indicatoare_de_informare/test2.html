@@ -3,6 +3,7 @@
 <head>
     <title>TraST</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="TraST, invata rutiera de acasa" />
     <meta name="keywords" content="TraST, semne de circulatie, teste auto" />
     <meta name="distribution" content="Global" />
@@ -10,9 +11,9 @@
     <meta name="owner"  content="P.C.N" />
     <link rel="icon" href="../../../pics/logo.png" type="image/png">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="../test_style.css">
+    <link rel="stylesheet" type="text/css" href="../../../CSS/test_style.css">
     <link rel="stylesheet" href="../../../CSS/web.css">
-   
+
 </head>
 
 <body>
@@ -61,31 +62,48 @@
 
 
 </div>
-    <div class="grid">
-        <div id="quiz">
-            <h1>Quiz</h1>
-            <hr style="margin-bottom: 20px">
 
-            <p id="question"></p>
+<!--phone sidebar-->
 
-            <ul class="grid1">
-                <ul id="textAnswer0"></ul>
-                <ul id="textAnswer1"></ul>
-                <ul id="textAnswer2"></ul>
-            </ul>
+<div class="sidenav">
+    <a><img src="../../../pics/header_menu.png" alt="alt"></a>
+    <div class="dropdown-container">
+        <a href="../../../home.html" class="NavMain">Home</a>
+        <a href="../../../Learn/reguli_de_circulatie.html" class="NavMain ">Reguli de circulatie</a>
+        <a href="../../../Learn/semne_circulatie.html" class="NavMain" >Semne de circulatie</a>
+        <a href="../../../test.html" class="NavMain_activ" >Testeaza-ti cunostintele</a>
+        <a href="../../../log_in.html" class="NavMain" >Log in</a>
+        <a href="../../../sign_up.html" class="NavMain" >Sign up</a>
+    </div>
+</div>
 
-            <div class="buttons">
-                <button id="btn0"><span id="choice0"></span></button>
+<div class="grid">
+    <div id="quiz">
+        <h1>Quiz</h1>
+        <hr style="margin-bottom: 20px">
+
+        <p id="question"></p>
+
+        <ul class="grid1">
+            <ul id="textAnswer0"></ul>
+            <ul id="textAnswer1"></ul>
+            <ul id="textAnswer2"></ul>
+        </ul>
+
+        <div class="buttons">
+            <button id="btn0"><span id="choice0"></span></button>
+            <div class="buttons_small">
                 <button id="btn1"><span id="choice1"></span></button>
                 <button id="btn2"><span id="choice2"></span></button>
             </div>
-            <hr style="margin-top: 50px">
-            <footer>
-                <p id="progress">Question x of y</p>
-                    <button onclick="populate();" id="nxtbtn">Next</button>
-            </footer>
         </div>
+        <hr style="margin-top: 50px">
+        <footer>
+            <p id="progress">Question x of y</p>
+            <button onclick="populate();" id="nxtbtn">Next</button>
+        </footer>
     </div>
+</div>
 
 
 <script src="test2.js"></script>
