@@ -1,54 +1,35 @@
 <?php
-session_start();
-$servername = "localhost";
-$username = "root";
-$password = "1234";
-
+include 'config.php';
 try {
-    $conn = new PDO("mysql:host=$servername;dbname=trast", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
+  
 $user = $_POST['user'];
-
 $email = $_POST['e-mail'];
-
 $password = $_POST['pass'];
+$register = signUp($user,$email, $password);
 
-$stmt = $conn->prepare("SELECT username FROM users where username= :username ");
-$stmt->bindParam(':username',$user);
-$stmt->execute();
-
-    if($stmt->rowCount()===0){
-        $stmt = $conn->prepare("SELECT email FROM users where email= :email ");
-        $stmt->bindParam(':email', $email);
-        $stmt->execute();
-
-        if($stmt->rowCount()===0) {
-            $stmt = $conn->prepare("Insert into users (username,password,email,nickname) values(:username,:password,:email,:nick)");
-            $stmt->bindParam(':username', $user);
-            $stmt->bindParam(':password', $password);
-            $stmt->bindParam(':email', $email);
-            $stmt->bindParam(':nick', $user);
-            $stmt->execute();
-            echo("Account created!");
-
-
-        }else
-        {
-            echo ("This mail is already used");
-
+        if($register==='Success!'){
+            header('location:../log_in.php');
         }
+        else if($register==='Fail_1')
+        {
+           
+            $_SESSION['log_message']="This mail is already used";
+            header('location:../sign_up.php');
+        }
+   
+    else if($register==='Fail_2'){
+     
+        $_SESSION['log_message']="This username is already used";
+        header('location:../sign_up.php');
     }
-    else{
-        echo ("This username is already used");
 
-    }
 
 
 }
 catch(PDOException $e)
 {
-    echo "Error: " . $e->getMessage();
+    $_SESSION['log_message']="Error: " . $e->getMessage(); // sesion va lua acea valoare
+    header('location:../sign_up.php'); 
 }
 $conn=null;
 ?>

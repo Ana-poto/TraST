@@ -1,47 +1,35 @@
 <?php
-session_start();
-$servername = "localhost";
-$username = "root";
-$password = "1234";
+include 'config.php';
 
 try {
-    $conn = new PDO("mysql:host=$servername;dbname=trast", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $password = $_POST['pass'].'';
 
     $new_pass = $_POST['new_pass'].'';
 
     $email = $_POST['e-mail'].'';
+    $result=changePass($password, $new_pass, $email);
 
-    $stmt = $conn->prepare("SELECT username FROM users where username= :username  and email=:email and password=:pass");
-    $stmt->bindParam(':username',$_SESSION['username']);
-    $stmt->bindParam(':pass',$password);
-    $stmt->bindParam(':email',$email);
-    $stmt->execute();
-
-    if($stmt->rowCount()===0){
-        echo ("Email or pass do not match.");
-
+    if($result==='Success!'){
+        $_SESSION['log_message']="The password has been changed.";
+        header('location:../Profile.php');
     }
-    else{
-        if (strlen($new_pass) <16 || $password==='' || $email===''){
-            echo("The new password is too small or the password/mail do not match");
-        }
-        else {
-            $stmt = $conn->prepare("update users  set password=:pass where username=:username");
-            $stmt->bindParam(':username', $_SESSION['username']);
-            $stmt->bindParam(':pass', $new_pass);
-            $stmt->execute();
-            header('location:../Profile.php');
-        }
+    else if($result==='Fail_1')
+    {
+       
+        $_SESSION['log_message']="The password or email is wrong";
+        header('location:../Profile.php');
     }
-
-
+    else if($result==='Fail_2'){
+ 
+        $_SESSION['log_message']="The new password is under 6 characters or the mail is not good";
+        header('location:../Profile.php');
+    }
 }
 catch(PDOException $e)
 {
-    echo "Error: " . $e->getMessage();
+    $_SESSION['log_message']= "Eroare! Informatiile nu au fost salvate";
+    header('location:../Profile.php');
 }
 $conn=null;
 ?>

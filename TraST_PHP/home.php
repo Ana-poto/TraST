@@ -5,9 +5,10 @@
     <meta charset="utf-8" />
     <meta name="description" content="TraST, invata rutiera de acasa" />
     <meta name="keywords" content="TraST, semne de circulatie, teste auto" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="distribution" content="Global" />
-    <meta name="author" content="P.C.N" />
-    <meta name="owner"  content="P.C.N" />
+    <meta name="author" content="P.C.N." />
+    <meta name="owner"  content="P.C.N." />
     <link rel="icon" href="pics/logo.png" type="image/png">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="CSS/web.css" />
@@ -15,12 +16,13 @@
 
 
 
-<body onload="NavBar()">
+<body >
 
 <!--NAVBAR-->
 
 
-<div id="nav-background" >
+<div id="nav-background">
+
 
     <ul class="Left" >
         <li class="Logo">
@@ -31,17 +33,17 @@
     </ul>
     <ul class="Center" >
         <li class="Main">
-            <a class="NavMain" data-ui-name="learn" href="Learn/semne_circulatie.html">
+            <a class="NavMain" data-ui-name="learn" href="">
                 Imbogateste-ti cunostintele
             </a>
-            <div id="dropdown" class="dropdown-content">
-                <a href="Learn/learn1.html">Reg de circulatie</a>
-                <a href="Learn/semne_circulatie.html">Semne de circulatie</a>
+            <div  class="dropdown-content">
+                <a href="Learn/reguli_de_circulatie.php">Reguli de circulatie</a>
+                <a href="Learn/semne_circulatie.php">Semne de circulatie</a>
             </div>
         </li>
 
         <li class="Main">
-            <a class="NavMain" data-ui-name="teste" href="test.html">
+            <a class="NavMain" data-ui-name="teste" href="test.php">
                 Testeaza-ti cunostintele
             </a>
         </li>
@@ -53,12 +55,12 @@
         ?>
         <ul class="Right" >
             <li class="Main">
-                <a class="NavMain" data-ui-name="Log in" href="log_in.html">
+                <a class="NavMain" data-ui-name="Log in" href="log_in.php">
                     Log in
                 </a>
             </li>
             <li class="Main">
-                <a class="NavMain" data-ui-name="Sign up" href="sign_up.html">
+                <a class="NavMain" data-ui-name="Sign up" href="sign_up.php">
                     Sign up
                 </a>
             </li>
@@ -83,9 +85,38 @@
         <?php
     }
     ?>
-
-
 </div>
+
+
+<!--phone sidebar-->
+
+
+<div class="sidenav">
+    <a><img src="pics/header_menu.png" alt="alt"></a>
+    <div class="dropdown-container">
+        <a href="home.php" class="NavMain_activ">Home</a>
+        <a href="Learn/reguli_de_circulatie.php" class="NavMain ">Reguli de circulatie</a>
+        <a href="Learn/semne_circulatie.php" class="NavMain" >Semne de circulatie</a>
+        <a href="test.php" class="NavMain" >Testeaza-ti cunostintele</a>
+        <?php
+
+        if(!isset($_SESSION['username'])){
+        ?>
+            <a href="log_in.php" class="NavMain" >Log in</a>
+            <a href="sign_up.php" class="NavMain" >Sign up</a>
+            <?php
+        }
+        else
+        {
+        ?>
+            <a href="Profile.php" class="NavMain" ><?php   echo $_SESSION['username']; ?></a>
+            <a href="Auth/logout.php" class="NavMain" >Log Out</a>
+            <?php
+        }
+        ?>
+    </div>
+</div>
+
 
 
 <div id="Moto">
@@ -175,7 +206,7 @@
 
     </div>
     <div class="More">
-        <a href="learn.html" class="See_more">
+        <a href="Learn/semne_circulatie.php" class="See_more">
             More
         </a>
     </div>
@@ -183,47 +214,50 @@
 
 <section class="Learn&study">
     <div class="Study">
-        <a class="Study1" href="">
+        <a class="Study1" href="Teste/teste_semne/Indicatoare_rutiere_temporare/test7.php">
             <div>
-                <img src="pics/LOGO1.png" alt="learns" class="sign_image">
+                <img src="Teste/teste_semne/Indicatoare_rutiere_temporare/1.jpg" alt="learns" class="sign_image">
             </div>
             <div>
-                <h5>Study</h5>
-            </div>
-        </a>
-        <a class="Study2" href="">
-            <div>
-                <img src="pics/LOGO1.png" alt="learns" class="sign_image">
-            </div>
-            <div>
-                <h5>Study</h5>
+                <h5>Indicatoare rutiere temporare</h5>
             </div>
         </a>
-        <a class="Study3" href="">
+        <a class="Study2" href="Teste/teste_semne/Indicatoare_de_prioritate/test6.php">
             <div>
-                <img src="pics/LOGO1.png" alt="learns" class="sign_image">
+                <img src="Teste/teste_semne/Indicatoare_de_prioritate/5.jpg" alt="learns" class="sign_image">
             </div>
             <div>
-                <h5>Study</h5>
+                <h5>Indicatoare de prioritate</h5>
             </div>
         </a>
-        <a class="Study4" href="">
+        <a class="Study3" href="Teste/test/Test_general_semne/test_general_semne.php">
             <div>
-                <img src="pics/LOGO1.png" alt="learns" class="sign_image">
+                <img src="Teste/test/Test_general_semne/3438.jpg" alt="tests" class="sign_image">
             </div>
             <div>
-                <h5>Study</h5>
+                <h5>Test din semnele de circulatie</h5>
+            </div>
+        </a>
+        <a class="Study4" href="Teste/test/Test_general_reguli/test_general_reguli.php">
+            <div>
+                <img src="Teste/test/Test_general_semne/3615.jpg" alt="tests" class="sign_image">
+            </div>
+            <div>
+                <h5>Test din regulile de circulatie</h5>
             </div>
         </a>
 
     </div>
 
     <div class="More">
-        <a href="learn.html" class="See_more">
+        <a href="test.php" class="See_more">
             More
         </a>
     </div>
 </section>
+
+
+
 
 </body>
 </html>

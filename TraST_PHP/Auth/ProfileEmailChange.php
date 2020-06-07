@@ -1,12 +1,10 @@
 <?php
-session_start();
-$servername = "localhost";
-$username = "root";
-$password = "1234";
+include 'config.php';
+
+
 
 try {
-    $conn = new PDO("mysql:host=$servername;dbname=trast", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 
     $password = $_POST['pass'].'';
 
@@ -14,34 +12,32 @@ try {
 
     $email = $_POST['e-mail'].'';
 
-    $stmt = $conn->prepare("SELECT username FROM users where username= :username  and email=:email and password=:pass");
-    $stmt->bindParam(':username',$_SESSION['username']);
-    $stmt->bindParam(':pass',$password);
-    $stmt->bindParam(':email',$email);
-    $stmt->execute();
-
-    if($stmt->rowCount()===0){
-        echo ("Email or pass do not match.");
-
+    
+    $result=changeMail($password, $new_email, $email);
+    if($result==='Success!'){
+        $_SESSION['log_message']="The email has been changed.";
+        header('location:../Profile.php');
     }
-    else{
-        if (strlen($new_email) <16){ /** trebuie amanuntit **/
-            echo ("The new email isn't okay.");
-        }
-        else {
-            $stmt = $conn->prepare("update users  set email=:email where username=:username");
-            $stmt->bindParam(':username', $_SESSION['username']);
-            $stmt->bindParam(':email', $email_pass);
-            $stmt->execute();
-            header('location:../Profile.php');
-        }
+    else if($result==='Fail_1')
+    {
+       
+        $_SESSION['log_message']="The password is wrong";
+        header('location:../Profile.php');
     }
+
+else if($result==='Fail_2'){
+ 
+    $_SESSION['log_message']="The new mail must be at least 10 characters long";
+    header('location:../Profile.php');
+}
+
 
 
 }
 catch(PDOException $e)
 {
-    echo "Error: " . $e->getMessage();
+    $_SESSION['log_message']= "Eroare! Informatiile nu au fost salvate";
+    header('location:../Profile.php');
 }
 $conn=null;
 ?>
