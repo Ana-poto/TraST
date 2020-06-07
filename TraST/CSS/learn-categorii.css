@@ -1,0 +1,43 @@
+
+.center {
+    padding: 5px;
+    display: block;
+    width: auto;
+
+    box-shadow: 2px 8px 6px 6px grey;
+    margin: 5% 3% 3% 5%;
+
+    border-radius: 8px;
+}
+
+.img {
+    border-radius: 8px;
+
+}
+.text-center {
+    text-align: center ;
+    margin-top: 1cm;
+    color: grey;
+}
+
+.categorie{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.center:hover{
+        transform: scale(1.35);
+        transition: all 0.5s;
+        border-color: #5bc0eb;
+        
+}
+
+
+.center:focus{
+    transform: scale(1.35);
+    border-color: #5bc0eb;
+}
