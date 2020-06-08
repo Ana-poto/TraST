@@ -122,7 +122,7 @@
 
 <!--SIGN UP FORM-->
 
-<form class="sign_box" action="Auth/validate.php" method="post">
+<form class="sign_box" action="Auth/sign_up.php" method="post">
 <div class="form_logo">
     <img src="pics/logo.png" alt="LOGO" class="logo">
 </div>

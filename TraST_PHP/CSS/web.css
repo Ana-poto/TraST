@@ -278,7 +278,7 @@ button{
     display: grid;
     grid-row-gap: 0.75rem;
     grid-column-gap: 3%;
-    grid-template-columns: repeat(4, minmax(0px, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .Learn a, .Study a,.Total a{

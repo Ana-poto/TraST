@@ -123,7 +123,7 @@
 
 <!--LOG IN FORM-->
 
-<form class="log_box" action="Auth/validator.php" method="post">
+<form class="log_box" action="Auth/log_in.php" method="post">
 <div class="form_logo">
     <img src="pics/logo.png" alt="LOGO" class="logo">
   </div>
