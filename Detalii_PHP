@@ -1,7 +1,7 @@
 Baza de date este facuta cu xampp:
  nume baza de date trast
     Facut mom doar 1 table numit users : 
-      CREATE TABLE `users` (
+     CREATE TABLE `users` (
  `id` int(11) NOT NULL AUTO_INCREMENT,
  `username` varchar(32) NOT NULL,
  `password` varchar(32) NOT NULL,
@@ -11,10 +11,11 @@ Baza de date este facuta cu xampp:
  `nickname` varchar(32) NOT NULL,
  `age` int(3) DEFAULT NULL,
  `hobbys` varchar(64) DEFAULT NULL,
+ `Admin` tinyint(1) NOT NULL,
  `create_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
  PRIMARY KEY (`email`),
  UNIQUE KEY `id` (`id`)
-)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4
 Conectarea se face cu username:  root ; pw:1234 (creati-va un root cu acea parola sau schimbati-o din validate/validator)
 
 La sing in si sing_out acele 2 file validate se conn cu baza de date pentru a prelua/ insera date
@@ -25,23 +26,21 @@ Cum mom tot e in php nu putem avea acea optiune de save local.
      CREATE TABLE `sectiuni_reguli` (
  `id` int(11) NOT NULL AUTO_INCREMENT,
  `username` varchar(32) NOT NULL,
- `Nickname` varchar(32) NOT NULL,
  `s1` varchar(32) DEFAULT NULL,
  `s2` varchar(32) DEFAULT NULL,
  `s3` varchar(32) DEFAULT NULL,
  `s4` varchar(32) DEFAULT NULL,
  `s5` varchar(32) DEFAULT NULL,
- `s6` varchar(32) DEFAULT NULL,,
+ `s6` varchar(32) DEFAULT NULL,
  `create_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
  PRIMARY KEY (`username`),
  UNIQUE KEY `id` (`id`)
-)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4
 
 [tabel categorii_semne -> pt contorizarea parcurgerilor categoriilor de semne]
-     CREATE TABLE `categorii_semne` (
+     CCREATE TABLE `categorii_semne` (
  `id` int(11) NOT NULL AUTO_INCREMENT,
  `username` varchar(32) NOT NULL,
- `Nickname` varchar(32) NOT NULL,
  `Indicatoare de avertizare` varchar(64) DEFAULT NULL,
  `Indicatoare de informare` varchar(64) DEFAULT NULL,
  `Indicatoare de interzicere sau restrictie` varchar(64) DEFAULT NULL,
@@ -63,7 +62,7 @@ Cum mom tot e in php nu putem avea acea optiune de save local.
  `create_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
  PRIMARY KEY (`username`),
  UNIQUE KEY `id` (`id`)
-)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4
 
 [tabel teste]
 CREATE TABLE `teste` (
@@ -87,4 +86,4 @@ CREATE TABLE `teste` (
  `create_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
  PRIMARY KEY (`username`),
  UNIQUE KEY `id` (`id`)
-) 
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4
