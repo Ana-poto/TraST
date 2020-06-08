@@ -117,7 +117,7 @@
 </div>
 
 
-<div class ="nickname"> <h5><?php   echo $_SESSION['nickname']; ?></h5></div>
+<div class ="nickname"> <h5>   <?php   echo $_SESSION['nickname']; ?></h5></div>
 <?php
 
 if(isset($_SESSION['log_message'])){ ?>
