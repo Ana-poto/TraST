@@ -12,7 +12,7 @@ try {
     $result = addProgressTests($username, $testNo, $quizScore);
     if($result === "Success!"){
         $_SESSION['progress_message']="The has been saved.";
-        header('location:../Learn/reguli_de_circulatie.php');
+        header('location:../test.php');
     }
     else if($result === "Fail_1"){
         $_SESSION['progress_message']="The username is not valid.";
@@ -20,13 +20,13 @@ try {
     }
     else{
         $_SESSION['progress_message']="Section does not exist";
-        header('location:../Learn/reguli_de_circulatie.php');
+        header('location:../test.php');
     }
 }
 catch(PDOException $e)
 {
     $_SESSION['progress_message']= "Eroare! Progresul  nu a fost salvat";
-    header('location:../Learn/reguli_de_circulatie.php');
+    header('location:../test.php');
 }
 
 

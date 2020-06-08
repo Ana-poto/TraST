@@ -25,6 +25,7 @@ Cum mom tot e in php nu putem avea acea optiune de save local.
      CREATE TABLE `sectiuni_reguli` (
  `id` int(11) NOT NULL AUTO_INCREMENT,
  `username` varchar(32) NOT NULL,
+ `Nickname` varchar(32) NOT NULL,
  `s1` varchar(32) DEFAULT NULL,
  `s2` varchar(32) DEFAULT NULL,
  `s3` varchar(32) DEFAULT NULL,
@@ -40,6 +41,7 @@ Cum mom tot e in php nu putem avea acea optiune de save local.
      CREATE TABLE `categorii_semne` (
  `id` int(11) NOT NULL AUTO_INCREMENT,
  `username` varchar(32) NOT NULL,
+ `Nickname` varchar(32) NOT NULL,
  `Indicatoare de avertizare` varchar(64) DEFAULT NULL,
  `Indicatoare de informare` varchar(64) DEFAULT NULL,
  `Indicatoare de interzicere sau restrictie` varchar(64) DEFAULT NULL,
@@ -64,22 +66,25 @@ Cum mom tot e in php nu putem avea acea optiune de save local.
 )
 
 [tabel teste]
-   CREATE TABLE `teste` (
+CREATE TABLE `teste` (
  `id` int(11) NOT NULL AUTO_INCREMENT,
  `username` varchar(32) NOT NULL,
- `t1` varchar(32) DEFAULT NULL,
- `t2` varchar(32) DEFAULT NULL,
- `t3` varchar(32) DEFAULT NULL,
- `t4` varchar(32) DEFAULT NULL,
- `t5` varchar(32) DEFAULT NULL,
- `t6` varchar(32) DEFAULT NULL,
- `t7` varchar(32) DEFAULT NULL,
- `t8` varchar(32) DEFAULT NULL,
- `t9` varchar(32) DEFAULT NULL,
- `t10` varchar(32) DEFAULT NULL,
- `t_A` varchar(32) DEFAULT NULL,
- `t_B` varchar(32) DEFAULT NULL,
+ `Nickname` varchar(32) NOT NULL,
+ `t1` int(11) DEFAULT NULL,
+ `t2` int(11) DEFAULT NULL,
+ `t3` int(11) DEFAULT NULL,
+ `t4` int(11) DEFAULT NULL,
+ `t5` int(11) DEFAULT NULL,
+ `t6` int(11) DEFAULT NULL,
+ `t7` int(11) DEFAULT NULL,
+ `t8` int(11) DEFAULT NULL,
+ `t9` int(11) DEFAULT NULL,
+ `t10` int(11) DEFAULT NULL,
+ `t_A` int(11) DEFAULT NULL,
+ `t_B` int(11) DEFAULT NULL,
+ `categorii_parcurse` int(11) NOT NULL,
+ `total` float NOT NULL,
  `create_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
  PRIMARY KEY (`username`),
  UNIQUE KEY `id` (`id`)
-)
+) 

@@ -314,10 +314,10 @@ function B_addProgressToDB($username,$sectiune){
             $stmt = $conn->prepare("update sectiuni_reguli set s4='done' where username=:username");
             break;
         case "s5":
-            $stmt = $conn->prepare("update sectiuni_reguli set s5=='done' where username=:username");
+            $stmt = $conn->prepare("update sectiuni_reguli set s5='done' where username=:username");
             break;
         case "s6":
-            $stmt = $conn->prepare("update sectiuni_reguli set s6=='done' where username=:username");
+            $stmt = $conn->prepare("update sectiuni_reguli set s6='done' where username=:username");
             break;
         default:
             return "Fail_1";

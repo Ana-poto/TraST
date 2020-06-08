@@ -116,13 +116,12 @@ function showProgress() {
 function showScores() {
     var gameOverHTML = "<h1  class='result'>Result</h1>";
     gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
+    gameOverHTML += "<footer><form action='../../../Auth/recordProgressTest.php' method='post'> ";
+    gameOverHTML += "<input type='text' id='testNo' name='testNo' value='t_A'>";
+    gameOverHTML += "<input type='text' id='quizScore' name='quizScore' value=" + quiz.score + ">";
+    gameOverHTML += "<button id='contor'>Marcheaza progres</button> </form> </footer>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
-
-    var quizScore = quiz.score;
-    var testNo= "t_A";
-    console.log(testNo);
-    console.log(quizScore);
 };
 
 // create questions here
