@@ -141,8 +141,24 @@ button{
     margin-bottom: 10%;
     font-size: 150%;
 }
+.Semne_Circulatie, .Reguli_Circulatie{
+    margin-top: 2%;
+    margin-bottom: 5%;
+
+}
+
+.table_col{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: rgba(0,139,0,0.5);
+}
+.table_cat{
+    color:rgb(232, 81, 81);
+}
+
 #sectiune, #testNo,#quizScore{
-   display: none;
+    display: none;
 }
 #contor{
     background-color: #778897;
@@ -156,7 +172,6 @@ button{
     padding: 10px 10px;
     z-index: -1;
 }
-
 .Main:hover .dropdown-content {display: block;}
 
 
