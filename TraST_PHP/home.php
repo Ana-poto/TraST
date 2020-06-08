@@ -229,7 +229,7 @@ if(isset($_SESSION['username'])){
     <div class="Study">
         <a class="Study1" href="Teste/teste_semne/Indicatoare_rutiere_temporare/test7.php">
             <div>
-                <img src="Teste/teste_semne/Indicatoare_rutiere_temporare/1.jpg" alt="learns" class="sign_image">
+                <img src="pics/temporare.svg" alt="learns" class="sign_image">
             </div>
             <div>
                 <h5>Indicatoare rutiere temporare</h5>
@@ -237,7 +237,7 @@ if(isset($_SESSION['username'])){
         </a>
         <a class="Study2" href="Teste/teste_semne/Indicatoare_de_prioritate/test6.php">
             <div>
-                <img src="Teste/teste_semne/Indicatoare_de_prioritate/5.jpg" alt="learns" class="sign_image">
+                <img src="pics/prioritate.svg" alt="learns" class="sign_image">
             </div>
             <div>
                 <h5>Indicatoare de prioritate</h5>
@@ -245,7 +245,7 @@ if(isset($_SESSION['username'])){
         </a>
         <a class="Study3" href="Teste/test/Test_general_semne/test_general_semne.php">
             <div>
-                <img src="Teste/test/Test_general_semne/3438.jpg" alt="tests" class="sign_image">
+                <img src="pics/obligare.svg" alt="tests" class="sign_image">
             </div>
             <div>
                 <h5>Test din semnele de circulatie</h5>

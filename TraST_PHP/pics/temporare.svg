@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="450"
+   height="400"
+   id="svg1551"
+   sodipodi:version="0.32"
+   inkscape:version="0.43"
+   version="1.0"
+   sodipodi:docbase="/home/tomilepp/svg/liikennemerkit"
+   sodipodi:docname="Irtokiviä 143.svg">
+  <defs
+     id="defs1553" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35355339"
+     inkscape:cx="234"
+     inkscape:cy="303.30308"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:window-width="760"
+     inkscape:window-height="544"
+     inkscape:window-x="290"
+     inkscape:window-y="11" />
+  <metadata
+     id="metadata1556">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path1720"
+       d="M 19.207,396.2419 C 3.937,395.7519 -3.073,380.8219 3.197,368.5819 L 208.967,12.9719 C 217.267,-0.1281 233.447,1.5319 240.927,12.9719 L 446.697,368.5819 C 452.857,379.8419 446.727,393.9519 433.087,396.1219 L 19.207,396.2419"
+       style="fill:#ffd90f;fill-rule:evenodd;stroke:none" />
+    <path
+       id="path1722"
+       d="M 18.737,391.0019 C 8.227,390.3919 3.017,379.4719 7.737,371.2019 L 213.507,15.5819 C 218.437,7.1819 230.857,6.4319 236.327,15.5819 L 442.167,371.2019 C 447.207,379.3819 440.997,391.1419 430.697,390.9919 L 18.737,391.0019"
+       style="fill:#ff163c;fill-rule:evenodd;stroke:none" />
+    <path
+       id="path1724"
+       d="M 55.817,356.7219 L 224.917,64.4019 L 394.077,356.7219 L 55.817,356.7219"
+       style="fill:#ffd90f;fill-rule:evenodd;stroke:none" />
+    <path
+       id="path1726"
+       d="M 191.827,336.7619 L 249.627,236.6919 L 264.727,248.1719 L 200.267,332.5219 L 262.747,286.6119 L 273.707,304.0619 L 207.157,333.5919 L 302.037,317.4519 L 303.357,334.2519 L 193.427,338.8519 L 191.827,336.7619"
+       style="fill:#000000;fill-rule:evenodd;stroke:none" />
+    <path
+       id="path1728"
+       d="M 254.487,228.6219 L 255.977,210.8619 L 266.527,203.0319 L 269.757,212.5419 L 286.597,218.3419 L 287.247,227.5419 L 284.317,239.8619 L 268.977,239.3219 L 254.487,228.6219"
+       style="fill:#000000;fill-rule:evenodd;stroke:none" />
+    <path
+       id="path1730"
+       d="M 275.687,264.0719 L 296.237,261.3819 L 309.837,277.9419 L 311.747,298.0219 L 292.527,293.6019 L 282.997,297.9619 L 273.897,288.3419 L 277.547,276.1419 L 275.687,264.0719"
+       style="fill:#000000;fill-rule:evenodd;stroke:none" />
+    <path
+       id="path1732"
+       d="M 322.597,310.8219 L 336.257,306.2119 L 343.027,314.3419 L 346.737,315.6619 L 341.587,334.1319 L 335.477,335.0319 L 333.497,333.2419 L 320.197,328.2119 L 322.597,310.8219"
+       style="fill:#000000;fill-rule:evenodd;stroke:none" />
+    <path
+       id="path1734"
+       d="M 161.087,175.2919 L 164.447,177.3919 L 170.617,183.7819 L 173.437,189.0419 L 186.017,230.4719 L 189.957,232.0819 L 193.907,235.0719 L 196.907,239.0119 L 199.117,244.0919 L 200.377,250.0119 L 200.197,256.0419 L 195.347,304.1619 L 194.567,306.3119 L 193.557,308.3519 L 192.177,310.1419 L 190.627,311.8119 L 188.767,313.1919 L 186.787,314.3219 L 186.727,331.4719 L 186.307,333.5619 L 185.537,335.6019 L 184.457,337.5119 L 183.077,339.1819 L 181.467,340.6219 L 179.547,341.8119 L 177.517,342.6519 L 175.357,343.1919 L 173.197,343.3119 L 170.987,343.0719 L 168.827,342.5319 L 166.867,341.6319 L 165.007,340.3819 L 163.387,338.8819 L 161.347,336.3119 L 160.627,334.8219 L 160.047,331.5919 L 160.047,312.4019 L 81.927,312.5219 L 106.907,268.8319 L 156.317,268.8319 L 154.777,266.6219 L 153.637,264.2319 L 152.797,261.7219 L 111.037,261.7219 L 114.877,255.0819 L 154.227,255.1419 L 154.397,253.6519 L 155.297,250.2419 L 156.317,247.9719 L 118.997,247.9719 L 129.717,229.3819 L 137.447,229.7419 L 144.637,229.9719 L 152.607,230.2119 L 167.757,230.9919 L 157.457,196.8519 L 156.497,195.0019 L 155.357,193.2819 L 152.247,190.5919 L 161.107,175.2819"
+       style="fill:#000000;fill-rule:evenodd;stroke:none" />
+    <path
+       id="path1736"
+       d="M 176.007,243.0319 L 177.927,243.4419 L 179.717,244.1619 C 181.147,244.8719 182.267,245.5719 183.077,246.2519 C 184.327,247.4519 185.187,248.4419 185.657,249.2419 C 188.907,254.9219 188.507,260.4019 184.457,265.6719 L 183.077,267.0519 L 179.717,269.2019 L 176.007,270.2819 C 174.557,270.3919 173.237,270.3919 172.057,270.2819 L 170.147,269.8619 L 168.287,269.2019 L 166.547,268.2419 L 164.997,267.0519 C 158.887,261.9919 158.557,251.6519 164.997,246.2419 L 166.547,245.0619 L 168.287,244.1619 C 169.467,243.5619 170.727,243.1819 172.067,243.0319 L 174.027,242.9119 L 176.007,243.0319"
+       style="fill:#ffd90f;fill-rule:evenodd;stroke:none" />
+  </g>
+</svg>
