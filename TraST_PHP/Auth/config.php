@@ -420,6 +420,51 @@ function A_addProgressToDB($username,$categorie){
         return "Fail_2";
     }
     else {
+        $sql= $conn->prepare("select * from categorii_semne where username=:username");
+        $sql->bindParam(':username', $username);
+        $sql->execute();
+        $row = $sql->fetch();
+        $points=0;
+        if($row['Indicatoare de avertizare']==='done')
+            $points++;
+        if($row['Indicatoare de informare']==='done')
+            $points++;
+        if($row['Indicatoare de interzicere sau restrictie']==='done')
+            $points++;
+        if($row['Panouri aditionale']==='done')
+            $points++;
+        if($row['Indicatoare de informare turistica']==='done')
+            $points++;
+        if($row['Indicatoare de obligare']==='done')
+            $points++;
+        if($row['Indicatoare de orientare']==='done')
+            $points++;
+        if($row['Indicatoare de prioritate']==='done')
+            $points++;
+        if($row['Semnale luminoase']==='done')
+            $points++;
+        if($row['Indicatoare instalate la trecerea cu calea ferata']==='done')
+            $points++;
+        if($row['Indicatoare kilometrice']==='done')
+            $points++;
+        if($row['Indicatoare rutiere temporare']==='done')
+            $points++;
+        if($row['Mijloace auxiliare de semnalizare a lucrărilor']==='done')
+            $points++;
+        if($row['Marcaje longitudinale']==='done')
+            $points++;
+        if($row['Marcaje transversale']==='done')
+            $points++;
+        if($row['Marcaje diverse']==='done')
+            $points++;
+        if($row['Marcaje laterale']==='done')
+            $points++;
+        if($row['Semnalele polițistului rutier']==='done')
+            $points++;
+        $stmt2=$conn->prepare("update teste set categorii_parcurse=:points where username=:username");
+        $stmt2->bindParam(':username', $username);
+        $stmt2->bindParam(':points', $points);
+        $stmt2->execute();
         calculateTotal($username);
         checkRankings();
         return "Success!";
