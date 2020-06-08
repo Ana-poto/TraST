@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html  lang ="RO">
 <head>
 <title>TraST</title>
 
@@ -118,12 +119,12 @@
 <h1 class="text-center">Codul Rutier</h1>
 <h2 class="text-center">Capitolul Reguli de circulatie</h2>
 
-<li class="link_sectiune"><h3><a href="../learn_categorii/B_learn/S1_Obligatiile_participantilor_la_trafic.php">SECTIUNEA 1 : Obligatiile participantilor la trafic</a></h3></li>
-<li class="link_sectiune"><h3><a href="../learn_categorii/B_learn/S2_Reguli_pentru_circulatia_vehiculelor.php">SECTIUNEA 2 : Reguli pentru circulatia vehiculelor</a></h3></li>
-<li class="link_sectiune"><h3><a href="../learn_categorii/B_learn/S3_Reguli_pentru_alti_participanti_la_trafic.php">SECTIUNEA 3 : Reguli pentru alti participanti la trafic</a></h3></li>
-<li class="link_sectiune"><h3><a href="../learn_categorii/B_learn/S4_Circulatia_pe_autostrazi.php">SECTIUNEA 4 : Circulatia pe autostrazi</a></h3></li>
-<li class="link_sectiune"><h3><a href="../learn_categorii/B_learn/S5_Obligatii_in_caz_de_accident.php">SECTIUNEA 5 : Obligatii in caz de accident</a></h3></li>
-<li class="link_sectiune"><h3><a href="../learn_categorii/B_learn/S6_Circulatia_autovehiculelor_in_traficul_international.php">SECTIUNEA 6 : Circulatia autovehiculelor in traficul international</a></h3></li>
+<div class="link_sectiune"><h3><a href="../learn_categorii/B_learn/S1_Obligatiile_participantilor_la_trafic.php">SECTIUNEA 1 : Obligatiile participantilor la trafic</a></h3></div>
+<div class="link_sectiune"><h3><a href="../learn_categorii/B_learn/S2_Reguli_pentru_circulatia_vehiculelor.php">SECTIUNEA 2 : Reguli pentru circulatia vehiculelor</a></h3></div>
+<div class="link_sectiune"><h3><a href="../learn_categorii/B_learn/S3_Reguli_pentru_alti_participanti_la_trafic.php">SECTIUNEA 3 : Reguli pentru alti participanti la trafic</a></h3></div>
+<div class="link_sectiune"><h3><a href="../learn_categorii/B_learn/S4_Circulatia_pe_autostrazi.php">SECTIUNEA 4 : Circulatia pe autostrazi</a></h3></div>
+<div class="link_sectiune"><h3><a href="../learn_categorii/B_learn/S5_Obligatii_in_caz_de_accident.php">SECTIUNEA 5 : Obligatii in caz de accident</a></h3></div>
+<div class="link_sectiune"><h3><a href="../learn_categorii/B_learn/S6_Circulatia_autovehiculelor_in_traficul_international.php">SECTIUNEA 6 : Circulatia autovehiculelor in traficul international</a></h3></div>
 
 </body>
 </html>

@@ -10,8 +10,10 @@
   display: block;
   font-size: larger;
   padding: 15px;
-
-}    
+}
+.link_sectiune h3 a{
+  width: 24px;
+}
 
 
 

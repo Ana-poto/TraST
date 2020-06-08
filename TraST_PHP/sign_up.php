@@ -137,6 +137,8 @@
     </label>
     <label>
         <input  id="pass" type="password" placeholder="pass" name="pass"  required onkeyup='checkPass();'>
+    </label>
+    <label>
         <input  id="c_pass" type="password" placeholder="confirm" name="c_pass" required onkeyup='checkPass();' >
     </label>
     <span id="validation_message"></span>
@@ -147,7 +149,7 @@
         <?php
     }?>
 
-    <a class="link" href="log_in.html">LOGEAZA-TE</a>
+    <a class="link" href="log_in.php">LOGEAZA-TE</a>
 </form>
 </body>
 </html>

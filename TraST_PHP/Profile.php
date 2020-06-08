@@ -131,36 +131,36 @@ if(isset($_SESSION['log_message'])){ ?>
     <h4 class="profile_h4">Profile Details</h4>
 
     <form class="profile_form" method="post" action="Auth/ProfileD.php">
-        <a class="profile_p">
+        <div class="profile_p">
             <h3>First name:</h3>
             <label>
                 <input class="input" type="text" placeholder="firstName" name="firstName" value=<?php echo $_SESSION['first_name'];?>  >
             </label>
-        </a>
-        <a class="profile_p">
+        </div>
+        <div class="profile_p">
             <h3>Last name:</h3>
             <label>
                 <input class="input" type="text" placeholder="lastName" name="lastName" value= <?php echo $_SESSION['last_name'];?> >
             </label>
-        </a>
-        <a class="profile_p">
+        </div>
+        <div class="profile_p">
             <h3>Nickname:</h3>
             <label>
                 <input class="input" type="text" placeholder="nickname" name="nickname" value=<?php echo $_SESSION['nickname'];?> >
             </label>
-        </a>
-        <a class="profile_p">
+        </div>
+        <div class="profile_p">
             <h3>Hobby:</h3>
             <label>
                 <input class="input" type="text" placeholder="hobby" name="hobby" value=<?php echo $_SESSION['hobbys'];?> >
             </label>
-        </a>
-        <a class="profile_p">
+        </div>
+        <div class="profile_p">
             <h3>Age:</h3>
             <label>
                 <input class="input" type="text" placeholder="age" name="age" value=<?php echo $_SESSION['age'];?> >
             </label>
-        </a>
+        </div>
         <button class="Profile">Submit</button>
 
     </form>
@@ -169,30 +169,30 @@ if(isset($_SESSION['log_message'])){ ?>
     <h4 class="profile_h4">Password Changes</h4>
 
     <form class="profile_form" method="post" action="Auth/ProfilePassChange.php">
-        <a class="profile_p">
+        <div class="profile_p">
             <h3>Password:</h3>
             <label>
                 <input class="input" type="password" placeholder="pass" name="pass" >
             </label>
-        </a>
-        <a class="profile_p">
+        </div>
+        <div class="profile_p">
             <h3>New password:</h3>
             <label>
                 <input  id="pass" class="input" type="password" placeholder="new_pass" name="new_pass" onkeyup='checkPass();' >
             </label>
-        </a>
-        <a class="profile_p">
+        </div>
+        <div class="profile_p">
             <h3>Confirm password:</h3>
             <label>
                 <input  id="c_pass"  class="input" type="password" placeholder="confirm_pass" name="c_pass" onkeyup='checkPass();' >
             </label>
-        </a>
-        <a class="profile_p">
+        </div>
+        <div class="profile_p">
             <h3>Mail:</h3>
             <label>
                 <input class="input" type="text" placeholder="e-mail" name="e-mail" >
             </label>
-        </a>
+        </div>
         <span id="validation_message"></span>
         <button class="Profile">Submit</button>
     </form>
@@ -203,24 +203,24 @@ if(isset($_SESSION['log_message'])){ ?>
     <h4 class="profile_h4">Email Settings</h4>
 
     <form class="profile_form" method="post" action="Auth/ProfileEmailChange.php">
-        <a class="profile_p">
+        <div class="profile_p">
             <h3> Mail:</h3>
             <label>
                 <input class="input" type="text" placeholder="e-mail" name="e-mail" >
             </label>
-        </a>
-        <a class="profile_p">
+        </div>
+        <div class="profile_p">
             <h3>Password:</h3>
             <label>
                 <input class="input" type="password" placeholder="pass" name="pass" >
             </label>
-        </a>
-        <a class="profile_p">
+        </div>
+        <div class="profile_p">
             <h3>New mail:</h3>
             <label>
                 <input class="input" type="text" placeholder="new_email" name="new_email" >
             </label>
-        </a>
+        </div>
         <button class="Profile">Submit</button>
     </form>
 </div>
