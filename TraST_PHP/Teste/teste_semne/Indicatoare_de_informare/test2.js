@@ -129,7 +129,7 @@ function showScores() {
 // create questions here
 var questions = [
     new Question("1.Care dintre urmatoarele indica sfarsit de autostrada?",
-        ["<span> <div class='image'> <img  alt='image' src='6.jpg' > A </div> <div class='image'><img  alt='image' src='7.png' > B </div> <div class='image'><img  alt='image' src='18.png' > C </div> </span>",
+        ["<span> <div class='image'> <img  alt='image' src='6.jpg' > A<  </div> <div class='image'><img  alt='image' src='7.png' > B<  </div> <div class='image'><img  alt='image' src='18.png' > C<  </div> </span>",
             "",
             ""],
         ["A", "B","C"],
@@ -147,7 +147,7 @@ var questions = [
         ["A", "B","C"],
         "A"),
     new Question("4.Care dintre urmatoarele semnifica drum pentru autovehicule?",
-        ["<span> <div class='image'> <img  alt='image' src='14.png' > A </div> <div class='image'><img  alt='image' src='17.jpg' > B </div> <div class='image'><img  alt='image' src='28.png' > C  </div> </span>",
+        ["<span> <div class='image'> <img  alt='image' src='14.png' > A<  </div> <div class='image'><img  alt='image' src='17.jpg' > B<  </div> <div class='image'><img  alt='image' src='28.png' > C<  </div> </span>",
             "",
             ""],
         ["A", "B","C"],
