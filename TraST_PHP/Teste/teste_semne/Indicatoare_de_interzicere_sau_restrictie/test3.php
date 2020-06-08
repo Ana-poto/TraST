@@ -126,9 +126,9 @@
         <p id="question"></p>
 
         <ul class="grid1">
-            <ul id="textAnswer0"></ul>
-            <ul id="textAnswer1"></ul>
-            <ul id="textAnswer2"></ul>
+            <li id="textAnswer0"></li>
+            <li id="textAnswer1"></li>
+            <li id="textAnswer2"></li>
         </ul>
 
         <div class="buttons">
