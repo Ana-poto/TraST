@@ -2,7 +2,7 @@
 include 'config.php';
 try {
   
-$user = $_POST['user'];
+$user = $_POST['username'];
 $email = $_POST['e-mail'];
 $password = $_POST['pass'];
 $register = signUp($user,$email, $password);
