@@ -235,79 +235,79 @@ if(isset($_SESSION['log_message'])){ ?>
 
         </tr>
         <tr class="hovering">
-            <td class="table_cat"> <a href="learn_categorii/A_learn/A_learn_semne/Indicatoare_de_avertizare.php">Indicatoare de avertizare</a></td>
+            <td class="table_cat">Indicatoare de avertizare</td>
             <td class="table_col"><?php echo( $_SESSION['Indicatoare de avertizare']); ?></td>
 
         </tr>
         <tr class="hovering">
-            <td class="table_cat"> <a href="learn_categorii/A_learn/A_learn_semne/Indicatoare_de_informare.php">Indicatoare de informare</a></td>
+            <td class="table_cat">Indicatoare de informare</td>
             <td class="table_col"><?php echo($_SESSION['Indicatoare de informare']); ?></td>
 
         </tr>
         <tr class="hovering">
-            <td class="table_cat"> <a href="learn_categorii/A_learn/A_learn_semne/Indicatoare_de_interzicere_sau_restrictie.php">Indicatoare de interzicere sau restrictie</a></td>
+            <td class="table_cat">Indicatoare de interzicere sau restrictie</td>
             <td class="table_col"><?php echo($_SESSION['Indicatoare de interzicere sau restrictie']); ?></td>
 
         </tr>
         <tr class="hovering">
-            <td class="table_cat"> <a href="learn_categorii/A_learn/A_learn_semne/Panouri_aditionale.php">Panouri aditionale</a></td>
+            <td class="table_cat">Panouri aditionale</td>
             <td class="table_col"><?php echo($_SESSION['Panouri aditionale']); ?></td>
         </tr>
         <tr class="hovering">
-            <td class="table_cat"> <a href="learn_categorii/A_learn/A_learn_semne/Indicatoare_de_informare_turistica.php">Indicatoare de informare turistica</a></td>
+            <td class="table_cat">Indicatoare de informare turistica</td>
             <td class="table_col"><?php echo($_SESSION['Indicatoare de informare turistica']); ?></td>
         </tr>
         <tr class="hovering">
-            <td class="table_cat"> <a href="learn_categorii/A_learn/A_learn_semne/Indicatoare_de_obligare.php">Indicatoare de obligare</a></td>
+            <td class="table_cat">Indicatoare de obligare</td>
             <td class="table_col"><?php echo($_SESSION['Indicatoare de obligare']); ?></td>
         </tr>
 
         <tr class="hovering">
-            <td class="table_cat"> <a href="learn_categorii/A_learn/A_learn_semne/Indicatoare_de_orientare.php">Indicatoare de orientare</a></td>
+            <td class="table_cat">Indicatoare de orientare</td>
             <td class="table_col"><?php echo($_SESSION['Indicatoare de orientare']); ?></td>
         </tr>
         <tr class="hovering">
-            <td class="table_cat"> <a href="learn_categorii/A_learn/A_learn_semne/Indicatoare_de_prioritate.php">Indicatoare de prioritate</a></td>
+            <td class="table_cat">Indicatoare de prioritate</td>
             <td class="table_col"><?php echo($_SESSION['Indicatoare de prioritate']); ?></td>
         </tr>
         <tr class="hovering">
-            <td class="table_cat"> <a href="learn_categorii/A_learn/A_learn_semne/Semnale_luminoase.php">Semnale luminoase</a></td>
+            <td class="table_cat">Semnale luminoase</td>
             <td class="table_col"><?php echo($_SESSION['Semnale luminoase']); ?></td>
         </tr>
         <tr class="hovering">
-            <td class="table_cat"> <a href="learn_categorii/A_learn/A_learn_semne/Indicatoare_instalate_la_trecerea_cu_calea_ferata.php">Indicatoare de instalate la trecerea cu calea ferata</a></td>
+            <td class="table_cat">Indicatoare de instalate la trecerea cu calea ferata</td>
             <td class="table_col"><?php echo($_SESSION['Indicatoare instalate la trecerea cu calea ferata']); ?></td>
         </tr>
         <tr class="hovering">
-            <td class="table_cat"> <a href="learn_categorii/A_learn/A_learn_semne/Indicatoare_kilometrice.php">Indicatoare kilometrice</a></td>
+            <td class="table_cat">Indicatoare kilometrice</td>
             <td class="table_col"><?php echo($_SESSION['Indicatoare kilometrice']); ?></td>
         </tr>
         <tr class="hovering">
-            <td class="table_cat"> <a href="learn_categorii/A_learn/A_learn_semne/Indicatoare_rutiere_temporare.php">Indicatoare rutiere temporare</a></td>
+            <td class="table_cat">Indicatoare rutiere temporare</td>
             <td class="table_col"><?php echo($_SESSION['Indicatoare rutiere temporare']); ?></td>
         </tr>
         <tr class="hovering">
-            <td class="table_cat"> <a href="learn_categorii/A_learn/A_learn_semne/Mijloace_auxiliare_de_semnalizare_a_lucrărilor.php">Mijloace auxiliare de semnalizare a lucrărilor</a></td>
+            <td class="table_cat">Mijloace auxiliare de semnalizare a lucrărilor</td>
             <td class="table_col"><?php echo($_SESSION['Mijloace auxiliare de semnalizare a lucrărilor']); ?></td>
         </tr>
         <tr class="hovering">
-            <td class="table_cat"> <a href="learn_categorii/A_learn/A_learn_semne/Marcaje_longitudinale.php">Marcaje longitudinale</a></td>
+            <td class="table_cat">Marcaje longitudinale</td>
             <td class="table_col"><?php echo($_SESSION['Marcaje longitudinale']); ?></td>
         </tr>
         <tr class="hovering">
-            <td class="table_cat"> <a href="learn_categorii/A_learn/A_learn_semne/Marcaje_transversale.php">Marcaje transversale</a></td>
+            <td class="table_cat">Marcaje transversale</td>
             <td class="table_col"><?php echo($_SESSION['Marcaje transversale']); ?></td>
         </tr>
         <tr class="hovering">
-            <td class="table_cat"> <a href="learn_categorii/A_learn/A_learn_semne/Marcaje_diverse.php">Marcaje diverse</a></td>
+            <td class="table_cat">Marcaje diverse</td>
             <td class="table_col"><?php echo($_SESSION['Marcaje diverse']); ?></td>
         </tr>
         <tr class="hovering">
-            <td class="table_cat"> <a href="learn_categorii/A_learn/A_learn_semne/Marcaje_laterale.php">Marcaje laterale</a></td>
+            <td class="table_cat">Marcaje laterale</td>
             <td class="table_col"><?php echo($_SESSION['Marcaje laterale']); ?></td>
         </tr>
         <tr class="hovering">
-            <td class="table_cat"> <a href="learn_categorii/A_learn/A_learn_semne/Semnalele_polițistului_rutier.php">Semnalele polițistului rutier</a></td>
+            <td class="table_cat">Semnalele polițistului rutier</td>
             <td class="table_col"><?php echo($_SESSION['Semnalele polițistului rutier']); ?></td>
         </tr>
     </table>
@@ -324,30 +324,30 @@ if(isset($_SESSION['log_message'])){ ?>
 
         </tr>
         <tr class="hovering">
-            <td class="table_cat"><a href="learn_categorii/B_learn/S1_Obligatiile_participantilor_la_trafic.php">S1 Obligatiile participantilor la trafic</a> </td>
+            <td class="table_cat">Indicatoare de avertizare</td>
             <td class="table_col"><?php echo( $_SESSION['s1']); ?></td>
 
         </tr>
         <tr class="hovering">
-            <td class="table_cat"><a href="learn_categorii/B_learn/S2_Reguli_pentru_circulatia_vehiculelor.php">S2 Reguli pentru circulatia vehiculelor</a></td>
+            <td class="table_cat">Indicatoare de informare</td>
             <td class="table_col"><?php echo($_SESSION['s2']); ?></td>
 
         </tr>
         <tr class="hovering">
-            <td class="table_cat"><a href="learn_categorii/B_learn/S3_Reguli_pentru_alti_participanti_la_trafic.php">S3 Reguli pentru alti participanti la trafic</a></td>
+            <td class="table_cat">Indicatoare de interzicere sau restrictie</td>
             <td class="table_col"><?php echo($_SESSION['s3']); ?></td>
 
         </tr>
         <tr class="hovering">
-            <td class="table_cat"><a href="learn_categorii/B_learn/S4_Circulatia_pe_autostrazi.php">S4 Circulatia pe autostrazi</a></td>
+            <td class="table_cat">Panouri aditionale</td>
             <td class="table_col"><?php echo($_SESSION['s4']); ?></td>
         </tr>
         <tr class="hovering">
-            <td class="table_cat"><a href="learn_categorii/B_learn/S5_Obligatii_in_caz_de_accident.php">S5 Obligatii in caz de accident</a></td>
+            <td class="table_cat">Indicatoare de informare turistica</td>
             <td class="table_col"><?php echo($_SESSION['s5']); ?></td>
         </tr>
         <tr class="hovering">
-            <td class="table_cat"><a href="learn_categorii/B_learn/S6_Circulatia_autovehiculelor_in_traficul_international.php">S6 Circulatia autovehiculelor in traficul international</a></td>
+            <td class="table_cat">Indicatoare de obligare</td>
             <td class="table_col"><?php echo($_SESSION['s6']); ?></td>
         </tr>
 

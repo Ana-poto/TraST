@@ -12,6 +12,7 @@
     <link rel="icon" href="pics/logo.png" type="image/png">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="CSS/web.css" />
+    <link rel="alternate" href="feed/" title="TraST RSS feed" type="application/rss+xml" />
 </head>
 
 
@@ -126,6 +127,9 @@
     <img src="pics/home_page.jpg" alt="Home_pic">
 
 </div>
+
+
+
 <p> Traffic Signs Tutor este un site web
     care faciliteaza procesul de invatare
     a semnelor rutiere si a regulilor
