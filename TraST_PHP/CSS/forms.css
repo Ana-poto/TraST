@@ -11,8 +11,9 @@ body{
 
 
 .log_box, .sign_box{
+    margin-top: 2%;
     width: 300px;
-    height: 600px;
+    height: 560px;
     padding: 40px;
     position: absolute;
     top:50%;

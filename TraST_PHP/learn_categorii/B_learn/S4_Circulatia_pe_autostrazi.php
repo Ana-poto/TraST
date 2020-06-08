@@ -129,6 +129,13 @@
 <p>(4) Circulatia autovehiculelor destinate transportului public de persoane sau de marfuri se efectueaza, de regula, numai pe banda marginala din partea dreapta a autostrazii, in sensul de mers.</p>
     </div>
 </div>
+
+<footer>
+    <form action="../../Auth/recordProgressSections.php" method="post">
+        <input type="text" id="sectiune" name="sectiune" value="s4">
+        <button id="contor" >Sectiune parcursa</button>
+    </form>
+</footer>
     <script src="../../CSS/expand_B.js"></script>
 
 

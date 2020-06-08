@@ -117,7 +117,7 @@
     </div>
 </div>
 
-<h2 class="text-center">Indicatoare de kilometrice</h2>
+<h2 class="text-center">Indicatoare  kilometrice</h2>
 <div class="categorie">
 <input type="image" src="../Indicatoare_kilometrice/1.PNG" alt="Indicatoare kilometrice.html" class="center" >
 <input type="image" src="../Indicatoare_kilometrice/2.PNG" alt="Indicatoare kilometrice.html" class="center" >
@@ -127,6 +127,11 @@
 </div>
 
 
-
+<footer>
+    <form action="../../../Auth/recordProgressCategories.php" method="post">
+        <input type="text" id="sectiune" name="categorie" value="Indicatoare  kilometrice">
+        <button id="contor" >Categorie parcursa</button>
+    </form>
+</footer>
 </body>
 </html>

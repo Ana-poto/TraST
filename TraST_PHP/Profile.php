@@ -18,7 +18,7 @@
     <link rel="icon" href="pics/logo.png" type="image/png">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="CSS/web.css" />
-    <script src="Auth/passValidator.js"></script>
+    <script src="passValidator.js"></script>
 </head>
 <body>
 <div id="nav-background">

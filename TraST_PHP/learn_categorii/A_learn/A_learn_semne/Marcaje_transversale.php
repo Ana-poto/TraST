@@ -126,5 +126,11 @@
 <input type="image" src="../Marcaje_transversale/4.PNG" alt="Marcaje_transversale.html" class="center" >
 <input type="image" src="../Marcaje_transversale/5.PNG" alt="Marcaje_transversale.html" class="center" >
 </div>
+<footer>
+    <form action="../../../Auth/recordProgressCategories.php" method="post">
+        <input type="text" id="sectiune" name="categorie" value="Marcaje transversale">
+        <button id="contor" >Categorie parcursa</button>
+    </form>
+</footer>
 </body>
 </html>

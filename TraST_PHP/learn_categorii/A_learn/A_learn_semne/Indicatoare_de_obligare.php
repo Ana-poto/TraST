@@ -140,6 +140,11 @@
 <input type="image" src="../Indicatoare_de_obligare/18.PNG" alt="Indicatoare de obligare.html" class="center" >
 <input type="image" src="../Indicatoare_de_obligare/19.PNG" alt="Indicatoare de obligare.html" class="center" >
 </div>
-
+<footer>
+    <form action="../../../Auth/recordProgressCategories.php" method="post">
+        <input type="text" id="sectiune" name="categorie" value="Indicatoare de obligare">
+        <button id="contor" >Categorie parcursa</button>
+    </form>
+</footer>
 </body>
 </html>

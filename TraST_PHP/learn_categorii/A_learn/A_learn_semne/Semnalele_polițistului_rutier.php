@@ -134,6 +134,11 @@
 <input type="image" src="../Semnalele_polițistului_rutier/12.PNG" alt="Semnalele_polițistului_rutier.html" class="center" >
 
 </div>
-
+<footer>
+    <form action="../../../Auth/recordProgressCategories.php" method="post">
+        <input type="text" id="sectiune" name="categorie" value="Semnalele polițistului rutier">
+        <button id="contor" >Categorie parcursa</button>
+    </form>
+</footer>
 </body>
 </html>

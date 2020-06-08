@@ -125,6 +125,11 @@
 </div>
 
 
-
+<footer>
+    <form action="../../../Auth/recordProgressCategories.php" method="post">
+        <input type="text" id="sectiune" name="categorie" value="Indicatoare instalate la trecerea cu calea ferata">
+        <button id="contor" >Categorie parcursa</button>
+    </form>
+</footer>
 </body>
 </html>

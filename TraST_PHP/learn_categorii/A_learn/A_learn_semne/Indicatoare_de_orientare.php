@@ -175,5 +175,11 @@
 <input type="image" src="../Indicatoare_de_orientare/53.PNG" alt="Indicatoare de orientare.html" class="center" >
 
 </div>
+<footer>
+    <form action="../../../Auth/recordProgressCategories.php" method="post">
+        <input type="text" id="sectiune" name="categorie" value="Indicatoare de orientare">
+        <button id="contor" >Categorie parcursa</button>
+    </form>
+</footer>
 </body>
 </html>

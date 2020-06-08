@@ -137,6 +137,12 @@
         <input type="password" placeholder="Password" name="pass" required>
     </label>
     <input type="submit" name="Log in">
+    <?php
+
+    if(isset($_SESSION['log_message'])){ ?>
+        <div id="message">   <?php   echo $_SESSION['log_message']; unset($_SESSION['log_message']); ?> </div>
+        <?php
+    }?>
 
     <a class="link" href="sign_up.php">CREEAZA-TI UN CONT</a>
 

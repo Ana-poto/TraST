@@ -136,6 +136,11 @@
 <input type="image" src="../Indicatoare_de_informare_turistica/11.PNG" alt="Indicatoare de informare turistica.html" class="center" >
 <input type="image" src="../Indicatoare_de_informare_turistica/12.PNG" alt="Indicatoare de informare turistica.html" class="center" >
 </div>
-
+<footer>
+    <form action="../../../Auth/recordProgressCategories.php" method="post">
+        <input type="text" id="sectiune" name="categorie" value="Indicatoare de informare turistica">
+        <button id="contor" >Categorie parcursa</button>
+    </form>
+</footer>
 </body>
 </html>

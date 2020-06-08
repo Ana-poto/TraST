@@ -136,5 +136,11 @@
 <input type="image" src="../Mijloace_auxiliare_de_semnalizare_a_lucrărilor/14.PNG" alt="Mijloace_auxiliare_de_semnalizare_a_lucrărilor.html" class="center" >
 <input type="image" src="../Mijloace_auxiliare_de_semnalizare_a_lucrărilor/15.PNG" alt="Mijloace_auxiliare_de_semnalizare_a_lucrărilor.html" class="center" >
 </div>
+<footer>
+    <form action="../../../Auth/recordProgressCategories.php" method="post">
+        <input type="text" id="sectiune" name="categorie" value="Mijloace_auxiliare de semnalizare a lucrărilor">
+        <button id="contor" >Categorie parcursa</button>
+    </form>
+</footer>
 </body>
 </html>

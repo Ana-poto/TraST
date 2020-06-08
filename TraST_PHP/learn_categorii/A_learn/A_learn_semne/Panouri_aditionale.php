@@ -168,6 +168,11 @@
 <input type="image" src="../Panouri_aditionale/46.PNG" alt="Panouri aditionale.html" class="center" >
 <input type="image" src="../Panouri_aditionale/47.PNG" alt="Panouri aditionale.html" class="center" >
 </div>
-
+<footer>
+    <form action="../../../Auth/recordProgressCategories.php" method="post">
+        <input type="text" id="sectiune" name="categorie" value="Panouri aditionale">
+        <button id="contor" >Categorie parcursa</button>
+    </form>
+</footer>
 </body>
 </html>

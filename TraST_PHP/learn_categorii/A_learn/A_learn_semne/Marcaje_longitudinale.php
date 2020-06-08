@@ -130,5 +130,11 @@
 <input type="image" src="../Marcaje_longitudinale/8.PNG" alt="Marcaje_longitudinale.html" class="center" >
 <input type="image" src="../Marcaje_longitudinale/9.PNG" alt="Marcaje_longitudinale.html" class="center" >
 </div>
+<footer>
+    <form action="../../../Auth/recordProgressCategories.php" method="post">
+        <input type="text" id="sectiune" name="categorie" value="Marcaje longitudinale">
+        <button id="contor" >Categorie parcursa</button>
+    </form>
+</footer>
 </body>
 </html>

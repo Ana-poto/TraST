@@ -118,6 +118,11 @@ function showScores() {
     gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
+
+    var quizScore = quiz.score;
+    var testNo= "t_A";
+    console.log(testNo);
+    console.log(quizScore);
 };
 
 // create questions here

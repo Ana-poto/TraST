@@ -19,3 +19,67 @@ Conectarea se face cu username:  root ; pw:1234 (creati-va un root cu acea parol
 
 La sing in si sing_out acele 2 file validate se conn cu baza de date pentru a prelua/ insera date
 Cum mom tot e in php nu putem avea acea optiune de save local.
+
+
+[tabel sectiuni_reguli -> pt contorizarea parcurgerilor regulilor]
+     CREATE TABLE `sectiuni_reguli` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `username` varchar(32) NOT NULL,
+ `s1` varchar(32) DEFAULT NULL,
+ `s2` varchar(32) DEFAULT NULL,
+ `s3` varchar(32) DEFAULT NULL,
+ `s4` varchar(32) DEFAULT NULL,
+ `s5` varchar(32) DEFAULT NULL,
+ `s6` varchar(32) DEFAULT NULL,,
+ `create_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+ PRIMARY KEY (`username`),
+ UNIQUE KEY `id` (`id`)
+)
+
+[tabel categorii_semne -> pt contorizarea parcurgerilor categoriilor de semne]
+     CREATE TABLE `categorii_semne` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `username` varchar(32) NOT NULL,
+ `Indicatoare de avertizare` varchar(64) DEFAULT NULL,
+ `Indicatoare de informare` varchar(64) DEFAULT NULL,
+ `Indicatoare de interzicere sau restrictie` varchar(64) DEFAULT NULL,
+ `Panouri aditionale` varchar(64) DEFAULT NULL,
+ `Indicatoare de informare turistica` varchar(64) DEFAULT NULL,
+ `Indicatoare de obligare` varchar(64) DEFAULT NULL,
+ `Indicatoare de orientare` varchar(64) DEFAULT NULL,
+ `Indicatoare de prioritate` varchar(64) DEFAULT NULL,
+ `Semnale luminoase` varchar(64) DEFAULT NULL,
+ `Indicatoare de instalate la trecerea cu calea ferata` varchar(64) DEFAULT NULL,
+ `Indicatoare kilometrice` varchar(64) DEFAULT NULL,
+ `Indicatoare rutiere temporare` varchar(64) DEFAULT NULL,
+ `Mijloace auxiliare de semnalizare a lucrărilor` varchar(64) DEFAULT NULL,
+ `Marcaje longitudinale` varchar(64) DEFAULT NULL,
+ `Marcaje transversale` varchar(64) DEFAULT NULL,
+ `Marcaje diverse` varchar(64) DEFAULT NULL,
+ `Marcaje laterale` varchar(64) DEFAULT NULL,
+ `Semnalele polițistului rutier` varchar(64) DEFAULT NULL,
+ `create_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+ PRIMARY KEY (`username`),
+ UNIQUE KEY `id` (`id`)
+)
+
+[tabel teste]
+   CREATE TABLE `teste` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `username` varchar(32) NOT NULL,
+ `t1` varchar(32) DEFAULT NULL,
+ `t2` varchar(32) DEFAULT NULL,
+ `t3` varchar(32) DEFAULT NULL,
+ `t4` varchar(32) DEFAULT NULL,
+ `t5` varchar(32) DEFAULT NULL,
+ `t6` varchar(32) DEFAULT NULL,
+ `t7` varchar(32) DEFAULT NULL,
+ `t8` varchar(32) DEFAULT NULL,
+ `t9` varchar(32) DEFAULT NULL,
+ `t10` varchar(32) DEFAULT NULL,
+ `t_A` varchar(32) DEFAULT NULL,
+ `t_B` varchar(32) DEFAULT NULL,
+ `create_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+ PRIMARY KEY (`username`),
+ UNIQUE KEY `id` (`id`)
+)

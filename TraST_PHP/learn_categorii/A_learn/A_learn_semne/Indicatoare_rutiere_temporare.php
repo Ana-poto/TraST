@@ -158,8 +158,13 @@
 <input type="image" src="../Indicatoare_rutiere_temporare/37.PNG" alt="Indicatoare_rutiere_temporare.html" class="center" >
 <input type="image" src="../Indicatoare_rutiere_temporare/38.PNG" alt="Indicatoare_rutiere_temporare.html" class="center" >
 
-
-
 </div>
+
+<footer>
+    <form action="../../../Auth/recordProgressCategories.php" method="post">
+        <input type="text" id="sectiune" name="categorie" value="Indicatoare rutiere temporare">
+        <button id="contor" >Categorie parcursa</button>
+    </form>
+</footer>
 </body>
 </html>

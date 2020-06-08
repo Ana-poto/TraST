@@ -132,6 +132,11 @@
 <input type="image" src="../Marcaje_diverse/9.PNG" alt="Marcaje_diverse.html" class="center" >
 </div>
 
-
+<footer>
+    <form action="../../../Auth/recordProgressCategories.php" method="post">
+        <input type="text" id="sectiune" name="categorie" value="Marcaje diverse">
+        <button id="contor" >Categorie parcursa</button>
+    </form>
+</footer>
 </body>
 </html>

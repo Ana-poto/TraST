@@ -128,6 +128,11 @@
 <input type="image" src="../Indicatoare_de_prioritate/6.PNG" alt="Indicatoare de prioritate.html" class="center" >
 </div>
 
-
+<footer>
+    <form action="../../../Auth/recordProgressCategories.php" method="post">
+        <input type="text" id="sectiune" name="categorie" value="Indicatoare de prioritate">
+        <button id="contor" >Categorie parcursa</button>
+    </form>
+</footer>
 </body>
 </html>

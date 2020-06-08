@@ -170,5 +170,11 @@
 <input type="image" src="../Indicatoare_de_interzicere_sau_restrictie/47.PNG" alt="Indicatoare de interzicere sau restrictie.html" class="center" >
 
 </div>
+<footer>
+    <form action="../../../Auth/recordProgressCategories.php" method="post">
+        <input type="text" id="sectiune" name="categorie" value="Indicatoare de interzicere sau restrictie">
+        <button id="contor" >Categorie parcursa</button>
+    </form>
+</footer>
 </body>
 </html>

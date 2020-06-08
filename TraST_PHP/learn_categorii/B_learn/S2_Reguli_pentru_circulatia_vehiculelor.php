@@ -388,7 +388,12 @@
 
 </div>
 
-
+<footer>
+    <form action="../../Auth/recordProgressSections.php" method="post">
+        <input type="text" id="sectiune" name="sectiune" value="s2">
+        <button id="contor" >Sectiune parcursa</button>
+    </form>
+</footer>
 
 <script src="../../CSS/expand_B.js"></script>
 

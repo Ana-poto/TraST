@@ -183,7 +183,12 @@
         <p>(3) La solicitarea politiei rutiere, societatile din domeniul asigurarilor comunica in termenul stabilit de aceasta copii ale documentelor referitoare la constatarile amiabile de accidente inregistrate in evidenta acestora sau alte date expres cerute, in conditiile legii.</p>
     </div>
 </div>
-
+<footer>
+    <form action="../../Auth/recordProgressSections.php" method="post">
+        <input type="text" id="sectiune" name="sectiune" value="s5">
+        <button id="contor" >Sectiune parcursa</button>
+    </form>
+</footer>
 <script src="../../CSS/expand_B.js"></script>
 
 </body>
