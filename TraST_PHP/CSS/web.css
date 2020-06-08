@@ -153,8 +153,9 @@ button{
     align-self: center;
     background-color: rgba(0,139,0,0.5);
 }
-.table_cat{
+.table_cat a{
     color:rgb(232, 81, 81);
+    text-decoration: none;
 }
 
 #sectiune, #testNo,#quizScore{
