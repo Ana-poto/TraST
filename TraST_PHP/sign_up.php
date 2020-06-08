@@ -13,8 +13,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="CSS/web.css" />
     <link rel="stylesheet" href="CSS/forms.css" />
-
-
+    <script src="Auth/passValidator.js"></script>
 
 </head>
 
@@ -131,17 +130,24 @@
 <h1>Sign Up</h1>
 
     <label>
-        <input type="text" placeholder="Username" name="user" required>
+        <input id="username" type="text" placeholder="username" name="username" required >
     </label>
     <label>
-        <input type="email" placeholder="E-mail" name="e-mail" required>
+        <input  id="e-mail" type="email" placeholder="e-mail" name="e-mail" required >
     </label>
     <label>
-        <input type="password" placeholder="Password" name="pass" required>
+        <input  id="pass" type="password" placeholder="pass" name="pass"  required onkeyup='checkPass();'>
+        <input  id="c_pass" type="password" placeholder="confirm" name="c_pass" required onkeyup='checkPass();' >
     </label>
+    <span id="validation_message"></span>
     <input type="submit" name="Sign up" value="Sign up">
+    <?php
+    if(isset($_SESSION['log_message'])){ ?>
+        <div id="message">   <?php   echo $_SESSION['log_message']; unset($_SESSION['log_message']); ?> </div>
+        <?php
+    }?>
 
-    <a class="link" href="log_in.php">LOGEAZA-TE</a>
+    <a class="link" href="log_in.html">LOGEAZA-TE</a>
 </form>
 </body>
 </html>
