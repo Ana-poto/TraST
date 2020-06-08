@@ -134,6 +134,10 @@
     lectii si chestionare/grile pentru a va
     testa cunostiintele.
 </p>
+<?php
+
+if(isset($_SESSION['username'])){
+?>
 
 <table>
     <tr>
@@ -144,29 +148,38 @@
     </tr>
     <tr class="hovering">
         <td>#1</td>
-        <td>Maya</td>
-        <td>2</td>
-        <td>50</td>
+        <td><?php echo $_SESSION['#1']['Nickname'] ; ?></td>
+        <td><?php echo $_SESSION['#1']['categorii_parcurse'] ; ?></td>
+        <td><?php echo $_SESSION['#1']['total'] ; ?></td>
     </tr>
     <tr class="hovering">
         <td>#2</td>
-        <td>Alex</td>
-        <td>2</td>
-        <td>43</td>
+        <td><?php echo $_SESSION['#2']['Nickname'] ; ?></td>
+        <td><?php echo $_SESSION['#2']['categorii_parcurse'] ; ?></td>
+        <td><?php echo $_SESSION['#2']['total'] ; ?></td>
     </tr>
     <tr class="hovering">
         <td>#3</td>
-        <td>Jack</td>
-        <td>3</td>
-        <td>18</td>
+        <td><?php echo $_SESSION['#3']['Nickname'] ; ?></td>
+        <td><?php echo $_SESSION['#3']['categorii_parcurse'] ; ?></td>
+        <td><?php echo $_SESSION['#3']['total'] ; ?></td>
     </tr>
     <tr class="hovering">
         <td>#4</td>
-        <td>Samanta</td>
-        <td>1</td>
-        <td>10</td>
+        <td><?php echo $_SESSION['#4']['Nickname'] ; ?></td>
+        <td><?php echo $_SESSION['#4']['categorii_parcurse'] ; ?></td>
+        <td><?php echo $_SESSION['#4']['total'] ; ?></td>
+    </tr>
+    <tr class="hovering">
+        <td>#5</td>
+        <td><?php echo $_SESSION['#5']['Nickname'] ; ?></td>
+        <td><?php echo $_SESSION['#5']['categorii_parcurse'] ; ?></td>
+        <td><?php echo $_SESSION['#5']['total'] ; ?></td>
     </tr>
 </table>
+    <?php
+}
+?>
 
 <section class="Learn&study">
     <div class="Learn">
