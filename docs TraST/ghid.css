@@ -1,42 +1,18 @@
-html{
-	font-family:sans-serif;
-	font-size:100%;
+
+.foto{
+	width:900px;
+	height:600px;
 }
 body{
-	margin:0;
+	margin:10px 5px 5px 5px;
 }
 
-header>h1{
-	margin-left: 2%; 
+#baraDeNavigatie img{
+	width: 1800px;
+	height: 150px;
 }
-.banner{
-display: flex;
-justify-content:space-between;
+
+#logo img{
+	width: 400px;
+	height: 200px;
 }
-.banner>img{
-height:100px;
-}
-.foto{
-	width:100px;
-	height:50px;
-}
-h1,h2,h3,h4,h5,h6{
-letter-spacing:.0375em;
-}
-h1,h2{
-color:#4b0061;
-}
-h2{
-margin-top:3em;
-}
-h3{
-margin-top:2.5em;
-}
-h4{
-	font-weight:300;font-size:1.2em;
-	margin:2em 0 .5em;
-}
-article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{
-	display:block;
-}
-audio,canvas,progress,video{display:inline-block;vertical-align:baseline;}

@@ -2,8 +2,8 @@
 session_start();
 function connDB(){
     $servername = "localhost";
-    $db_username = "root";
-    $db_password = "1234";
+    $db_username = "trast_admin";
+    $db_password = "Admin_TraST";
 
     $conn = new PDO("mysql:host=$servername;dbname=trast", $db_username, $db_password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
