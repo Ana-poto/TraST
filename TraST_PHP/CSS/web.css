@@ -26,7 +26,6 @@ body{
     -ms-overflow-style: none;
 }
 .nickname{
-
     margin-top: 2%;
     margin-bottom: 3%;
     display: flex;
@@ -36,7 +35,6 @@ body{
     border: 0 ridge #B8B8B8;
     border-bottom-width: 3px;
 }
-
 .right-form{
     float :left;
     width: 50%;
@@ -253,7 +251,7 @@ button{
     margin: 20px;
     align-self: center;
     font-size: 300%;
-    color: #fffced;
+    color: #FFF8DC;
 }
 #home_image img{
     display: flex;
@@ -335,7 +333,7 @@ h2{
 }
 
 .See_more{
-    color: rgb(232, 81, 81);
+    color: #FFF8DC;
     top: 20px;
     text-decoration: none;
     font-size: 150%;
@@ -366,9 +364,6 @@ td{
 
 .sidenav{
     display: none;
-}
-.nickname h5{
-    color: white;
 }
 
 @media only screen and (max-width: 860px) {

@@ -138,6 +138,9 @@
     lectii si chestionare/grile pentru a va
     testa cunostiintele.
 </p>
+
+<button id="contor"><a href="feed/TraST_RSSFeed.php">RSS Top 5</a></button>
+
 <?php
 
 if(isset($_SESSION['username'])){
