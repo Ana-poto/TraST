@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link type="text/css" href="ghid.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class='banner'><img class='banner' src='logo.png'> </div>
+        <h1>Raport Progres TraST</h1>
+        </header>
+       <main>
+        <div>
+            <ol>
+                <li>
+                    <a href="#abstract">1.Abstract</a>
+                </li>
+                <li>
+                    <a href="#introducere">2.Introducere</a>
+                </li>
+                <li>
+                    <a href="#etapa0">3.Etapa preliminara</a>
+                </li>
+                <li>
+                    <a href="#etapa1">4.Prima etapa</a>
+                </li>
+                <li>
+                    <a href="#etapa2">5.A doua etapa</a>
+                </li>
+                <li>
+                    <a href="#etapa3">6.A treia etapa</a>
+                </li>
+                <li>
+                    <a href="#etapa4">7.A patra etapa</a>
+                </li>
+                <li>
+                    <a href="#etapa5">8.A cincea etapa</a>
+                </li>
+                <li>
+                    <a href="#observatii">9.Observatii</a>
+                </li>
+                <li>
+                    <a href="#bibliografie">10.Bibliografie</a>
+                </li>
+        </div>
+        <section id="abstract" role="doc-abstract">
+      <h2>Abstract</h2>
+      <p>
+        Acest documente contine detalii legate de procesul de creare a aplicatiei web TraST
+      </p>
+    </section>
+    <section id="introduction" role="doc-introduction">
+      <h2>Introduction</h2>
+      <p>
+        TraST - Traffic Signs Tutor
+        Traffic Signs Tutor este un site web
+	    care faciliteaza procesul de invatare
+	    a semnelor rutiere si a regulilor
+	    de circulatie din Romania.
+	    Pentru a realiza acest lucru va oferi
+	    lectii si chestionare/grile pentru a va
+	    testa cunostiintele.
+      </p>
+    </section>
+    <section id="etapa0">
+      <h2>Etapa Preliminara</h2>
+      <p>
+        In cadrul acestei etape, s-au analizat cerintele proiectului si a fost conceputa o structura initiala a Interfatei web a aplicatie, care
+        continea HomePage,Learn,Test,Sign Up si Log In, ca pagini principale (de baza) ce vor intra in interactiunea utilizatorului.
+      </p>
+    </section>
+      <section id="etapa1">
+      <h2>Prima etapa</h2>
+      <p>
+        Dupa crearea paginilor principale ale aplicatie web, in HTML5 si CSS3, la o analiza mai detaliata a continutului ce trebuie regasit in cadrul aplicatiei s-au creat pagini aditionale, pentru organizarea si afisarea continuturilor sectiunilor "Reguli de circulatie" si "Semne de circulatie".
+      </p>
+      <p>Subdiviziunile fiecarei sectiuni in parte urmeaza acelasi "sablon" - organizare a datelor/informatiilor in fisiere html</p>
+        <p>Sectiunea "Reguli de circulatie"<br>
+        <img class="foto" src="2.png"><br><br>
+       <p>html sample pentru una dintre subdiviziuni</p><br>
+        <img class="foto" src="3.png"><br><br>
+        <p>realizarea sectiunilor expandate s-a realizat cu JavaScript pe baza de event listener</p>
+           <p>code js</p><br>
+        <img class="foto" src="11.png"><br><br>
+        </p>
+        <p>Sectiunea "Semne de circulatie"<br><br>
+        <img class="foto" src="4.png"><br>
+          <p>html sample pentru una dintre subdiviziuni</p><br><br>
+        <img class="foto" src="5.png"><br><br>
+     
+        </p>
+      <p>
+    </section>
+    <section id="etapa2">
+      <h2>A doua etapa</h2>
+      <p>
+        Aceasta s-a desfasurat in paralel cu prima etapa si a cuprins realizarea formularelor de sign up si log in, precum si finisarea paginii de home.
+      </p>
+      <p>Structura celor 2 fromulare este asemanatoare.Intr-o prima etapa formularul de sign up continea doar 3 campuri:Username,Email,Password, dar apoi s-a revenit asupra acestuia adaugandu-se si un Confirm Password, precum si adaugarea unor criterii pentru campul parola(min 6 caracter, un uppercase ,un lowercase si un numar.Respectarea criteriilor si a compatibilitatii celor 2 parole se realizeaza prin intermediul unei functii de JavasScript.</p>
+        <p>varianta finala a formularului de sign up</p><br>
+        <img class="foto" src="6.png"><br><br>
+       
+          <p>html sample</p><br> 
+          <img class="foto" src="7.png"><br><br>
+         
+        </p>
+           <p>codul javascript</p><br>
+        <img class="foto" src="8.png"><br><br>
+        
+        </p>
+
+        <p>Pagina Home initiala continea doar scheletul(HTML5+CSS),iar ulterior s-a reveint asupra acesteia pentru afisarea unui top valid si a adaugarii posibilitati de descarcare a documentului ce contine date RSS ale acestuia.(acest lucru este posibil doar pentru utilizatori care au cont si sunt conectati,afisarea acestuia depinde de variabile setarile existente in $_SESSION care sunt modificate in functie de continut curent al bazei de date</p><br>
+        <img class="foto" src="9.png"><br><br>
+       
+          <p>code sample</p><br> 
+          <img class="foto" src="10.png"><br><br>
+         
+        
+        </p>
+      <p>
+    </section>
+     <section id="etapa3">
+      <h2>A treia etapa</h2>
+      <p>
+        Aceasta etapa a fost reprezentata de realizarea testelor de evaluare a cunostintelor.Acestea au la baza acelasi "schelet" html si cod de baza pentru popularea testului,verificarea raspunsului, calcularea punctajului in Javascript, dar difera prin continutul intrebarile ,care regasesc in format JSON.
+      </p>
+      <p>Exemplu test</p><br>
+        <img class="foto" src="12.png"><br><br>
+       <p>html code sample</p><br>
+        <img class="foto" src="13.png"><br><br>
+           <p>code js</p><br>
+        <img class="foto" src="14.png"><br><br>
+     
+        </p>
+      <p>
+    </section>
+    <section id="etapa4">
+      <h2>A patra etapa</h2>
+      <p>
+        Aceasta etapa a fost reprezentata de realizarea testelor de evaluare a cunostintelor.Acestea au la baza acelasi "schelet" html si cod de baza pentru popularea testului,verificarea raspunsului, calcularea punctajului in Javascript, dar difera prin continutul intrebarile ,care regasesc in format JSON.
+      </p>
+      <p>Exemplu test</p><br>
+        <img class="foto" src="12.png"><br><br>
+       <p>html code sample</p><br>
+        <img class="foto" src="13.png"><br><br>
+           <p>code js</p><br>
+        <img class="foto" src="14.png"><br><br>
+     
+        </p>
+      <p>
+    </section>
+    <section id="etapa5">
+      <h2>A cincea etapa</h2>
+      <p>
+        Aceasta etapa a constat in crearea bazei de date ce se alfa in spatele aplicatiei web, precum si realizarea partii de backend, ce se ocupa de toate modificarile necesare aplicatiei si bazei de date pe baza utilizatorilor acesteia.
+      </p>
+      <p>Baza de date [MySql] - ce contine tabele utilizate pentru informatiile utilizatorilor si pentru contorizarea progresului acesteia</p><br>
+        <img class="foto" src="17.png"><br><br>
+       <p>Functii care se ocupa de acesarile directe la baza de date se regasesc in fisierul config.php</p><br>
+        <img class="foto" src="15.png"><br><br>
+        <p>Functii care prelua datele de la utilizator prin metode POST/GET se regasesc in folderul Auth</p><br>
+        <img class="foto" src="16.png"><br><br>
+     
+        </p>
+      <p>
+    </section>
+    <section id="observatii">
+      <h2>Observatii</h2>
+      <p>
+        In cadrul fiecarei etape s-a revenit asupra 'codului' html si surselor css, pentru a se asigura corectitudinea lor.Totodata, s-a revenit asupra design-ului unde era necesar si la fiecare adaugare de noi elemente in cadrul intefetei s-a revizuit design pentru asigurarea caliatii sale responsive.
+        <p>Un exemplu cel mai bun pentru acesta obeservatie este creearea unui navbar separat pentru mobil</p>
+        
+      </p>
+    </section>
+    <section id="bibliografie">
+      <h2>Bibliografie</h2>
+      <p>
+       Aceasta sectiune contine link-uri cu sursele la care s-a apelat cel mai frecvent pentru prevenirea/rezolvarea problemelor aparute.
+      </p>
+      <p>   https://css-tricks.com/the-checkbox-hack/#article-header-id-0
+			https://www.sitepoint.com/simple-javascript-quiz/?fbclid=IwAR2Y9SzPBxaG1WycF-1Zl5-dD9elFQDGm9zT5cn9xLXyYWh7AqXFk0VZxKY
+			https://www.w3schools.com/html/default.asp
+			https://www.w3schools.com/CSS/default.asp
+			https://www.youtube.com/watch?v=NXAHkqiIepchttps://www.w3schools.com/php/php_mysql_select.asp
+			https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_dropdown
+			https://www.carronmedia.com/create-an-rss-feed-with-php/
+      </p>
+      <p>
+    </section>
+</main>
+</body>
+</html>
